@@ -38,7 +38,7 @@ export const SCHOOL_DATA: SchoolInfo = {
   socialLinks: {
     youtube: "https://www.youtube.com/@aspaljuniors",
     instagram: "https://www.instagram.com/aspaljuniors_51",
-    facebook: "https://www.facebook.com/asaplinternational",
+    facebook: "https://www.facebook.com/aspalinternationalschool",
   },
   address: {
     sector: "Sector 55",
