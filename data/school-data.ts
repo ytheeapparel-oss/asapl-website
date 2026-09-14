@@ -36,7 +36,7 @@ export const SCHOOL_DATA: SchoolInfo = {
   displayPhone: "+91 9873539445",
   email: "Rakeshpandey2001@gmail.com",
   socialLinks: {
-    youtube: "https://www.youtube.com/@ASAPLInternational",
+    youtube: "https://www.youtube.com/@aspaljuniors",
     instagram: "https://www.instagram.com/asaplinternational",
     facebook: "https://www.facebook.com/asaplinternational",
   },
