@@ -37,7 +37,7 @@ export const SCHOOL_DATA: SchoolInfo = {
   email: "Rakeshpandey2001@gmail.com",
   socialLinks: {
     youtube: "https://www.youtube.com/@aspaljuniors",
-    instagram: "https://www.instagram.com/asaplinternational",
+    instagram: "https://www.instagram.com/aspaljuniors_51",
     facebook: "https://www.facebook.com/asaplinternational",
   },
   address: {
