@@ -13,7 +13,10 @@ import {
   GraduationCap, 
   Calendar,
   ChevronRight,
-  Sun
+  Sun,
+  Youtube,
+  Instagram,
+  Facebook
 } from "lucide-react";
 import { SCHOOL_DATA } from "@/data/school-data";
 
@@ -46,27 +49,26 @@ export default function Header() {
 
   return (
     <>
+      <header className="sticky top-0 z-50 transition-all duration-300 shadow-sm">
       {/* Top Announcement Bar */}
-      <div className="bg-gradient-to-r from-sunshine-500 via-coral-500 to-ocean-500 text-white text-xs md:text-sm py-2 px-4 sm:px-8 lg:px-12 xl:px-16 font-medium transition-all shadow-xs">
+      <div className="bg-gradient-to-r from-sunshine-500 via-coral-500 to-ocean-500 text-white text-xs md:text-sm py-1.5 px-4 sm:px-8 lg:px-12 xl:px-16 font-medium transition-all shadow-xs">
         <div className="w-full max-w-[1720px] mx-auto flex flex-wrap justify-between items-center gap-2">
+          
+          {/* Left Side: Admissions Open Announcement Badge */}
           <div className="flex items-center space-x-2">
             <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[11px] font-extrabold bg-white text-coral-600 shadow-sm animate-pulse">
               ADMISSIONS OPEN 2025–26
             </span>
-            <span className="hidden sm:inline text-white/95 font-semibold">
+            <span className="hidden sm:inline text-white/95 font-semibold text-xs">
               | Playgroup, Nursery, KG & Primary Grades 1–5 • Sector 55, Noida
             </span>
           </div>
 
-          <div className="flex items-center space-x-4 text-xs font-semibold">
-            <span className="hidden xl:inline-flex items-center space-x-1.5 text-white/95">
-              <Sparkles className="w-3.5 h-3.5 text-sunshine-200" />
-              <span>Experiential & Joyful Learning Campus</span>
-            </span>
-            <span className="hidden xl:inline text-white/50">•</span>
+          {/* Right Side: Quick Contact & Right Corner Three Social Buttons */}
+          <div className="flex items-center space-x-3 sm:space-x-4 text-xs font-semibold">
             <a 
               href={`tel:${SCHOOL_DATA.phone}`} 
-              className="flex items-center space-x-1 hover:text-sunshine-200 transition-colors font-bold"
+              className="hidden md:flex items-center space-x-1 hover:text-sunshine-200 transition-colors font-bold"
               aria-label="Call ASAPL International"
             >
               <Phone className="w-3.5 h-3.5" />
@@ -75,24 +77,62 @@ export default function Header() {
             <span className="hidden md:inline text-white/50">•</span>
             <a 
               href={`mailto:${SCHOOL_DATA.email}`} 
-              className="hidden md:flex items-center space-x-1 hover:text-sunshine-200 transition-colors"
+              className="hidden xl:flex items-center space-x-1 hover:text-sunshine-200 transition-colors"
               aria-label="Email ASAPL International"
             >
               <Mail className="w-3.5 h-3.5" />
               <span>{SCHOOL_DATA.email}</span>
             </a>
-            <span className="hidden lg:inline text-white/50">•</span>
-            <span className="hidden lg:flex items-center space-x-1 text-white/95">
-              <MapPin className="w-3.5 h-3.5" />
-              <span>Sector 55, Noida</span>
-            </span>
+            <span className="hidden xl:inline text-white/50">•</span>
+
+            {/* Right Corner: Three Dedicated Social Buttons (YouTube, Instagram, Facebook) */}
+            <div className="flex items-center space-x-1.5 sm:space-x-2">
+              {/* YouTube Button */}
+              <a
+                href={SCHOOL_DATA.socialLinks.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold text-white bg-red-600 hover:bg-red-700 shadow-xs hover:shadow-md transition-all transform hover:scale-105 active:scale-95 group"
+                title="Watch ASAPL International on YouTube"
+                aria-label="YouTube channel"
+              >
+                <Youtube className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span className="font-bold tracking-tight">YouTube</span>
+              </a>
+
+              {/* Instagram Button */}
+              <a
+                href={SCHOOL_DATA.socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:via-pink-700 hover:to-amber-600 shadow-xs hover:shadow-md transition-all transform hover:scale-105 active:scale-95 group"
+                title="Follow ASAPL International on Instagram"
+                aria-label="Instagram profile"
+              >
+                <Instagram className="w-3.5 h-3.5 text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span className="font-bold tracking-tight">Instagram</span>
+              </a>
+
+              {/* Facebook Button */}
+              <a
+                href={SCHOOL_DATA.socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold text-white bg-[#1877F2] hover:bg-[#166fe5] shadow-xs hover:shadow-md transition-all transform hover:scale-105 active:scale-95 group"
+                title="Follow ASAPL International on Facebook"
+                aria-label="Facebook page"
+              >
+                <Facebook className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span className="font-bold tracking-tight">Facebook</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Main Sticky Navigation */}
-      <header 
-        className={`sticky top-0 z-50 transition-all duration-300 ${
+      {/* Main Navigation Bar */}
+      <div 
+        className={`transition-all duration-300 ${
           isScrolled 
             ? "bg-white/95 backdrop-blur-md shadow-md py-2.5" 
             : "bg-white py-3.5 border-b border-amber-100"
@@ -193,7 +233,8 @@ export default function Header() {
           </div>
 
         </div>
-      </header>
+      </div>
+    </header>
 
       {/* Mobile Drawer Navigation */}
       {mobileMenuOpen && (
@@ -261,6 +302,47 @@ export default function Header() {
                 >
                   Enquire for Admission
                 </Link>
+              </div>
+
+              {/* Social Channels in Drawer */}
+              <div className="mt-4 p-3 rounded-2xl bg-slate-50 border border-slate-200/70">
+                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-2">
+                  Follow Our Social Channels:
+                </span>
+                <div className="grid grid-cols-3 gap-2">
+                  <a
+                    href={SCHOOL_DATA.socialLinks.youtube}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center space-x-1 py-2 px-1.5 rounded-xl text-xs font-bold text-white bg-red-600 hover:bg-red-700 shadow-xs transition-colors"
+                    title="YouTube"
+                  >
+                    <Youtube className="w-3.5 h-3.5 fill-white" />
+                    <span>YouTube</span>
+                  </a>
+
+                  <a
+                    href={SCHOOL_DATA.socialLinks.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center space-x-1 py-2 px-1.5 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 shadow-xs transition-colors"
+                    title="Instagram"
+                  >
+                    <Instagram className="w-3.5 h-3.5 text-white" />
+                    <span>Insta</span>
+                  </a>
+
+                  <a
+                    href={SCHOOL_DATA.socialLinks.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center space-x-1 py-2 px-1.5 rounded-xl text-xs font-bold text-white bg-[#1877F2] hover:bg-[#166fe5] shadow-xs transition-colors"
+                    title="Facebook"
+                  >
+                    <Facebook className="w-3.5 h-3.5 fill-white" />
+                    <span>Facebook</span>
+                  </a>
+                </div>
               </div>
             </div>
 

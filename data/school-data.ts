@@ -6,6 +6,11 @@ export interface SchoolInfo {
   phone: string;
   displayPhone: string;
   email: string;
+  socialLinks: {
+    youtube: string;
+    instagram: string;
+    facebook: string;
+  };
   address: {
     sector: string;
     city: string;
@@ -30,6 +35,11 @@ export const SCHOOL_DATA: SchoolInfo = {
   phone: "9873539445",
   displayPhone: "+91 9873539445",
   email: "Rakeshpandey2001@gmail.com",
+  socialLinks: {
+    youtube: "https://www.youtube.com/@ASAPLInternational",
+    instagram: "https://www.instagram.com/asaplinternational",
+    facebook: "https://www.facebook.com/asaplinternational",
+  },
   address: {
     sector: "Sector 55",
     city: "Noida",

@@ -84,6 +84,50 @@ export default function Footer() {
               <ShieldCheck className="w-4 h-4 flex-shrink-0" />
               <span>Committed to Child Safeguarding, Privacy & 100% CCTV Safety</span>
             </div>
+
+            {/* Social Media Buttons */}
+            <div className="pt-2 space-y-2">
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">
+                Connect With Us Online:
+              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                <a
+                  href={SCHOOL_DATA.socialLinks.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-red-600 hover:bg-red-700 shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
+                  title="Watch ASAPL International on YouTube"
+                  aria-label="YouTube channel"
+                >
+                  <Youtube className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <span>YouTube</span>
+                </a>
+
+                <a
+                  href={SCHOOL_DATA.socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:via-pink-700 hover:to-amber-600 shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
+                  title="Follow ASAPL International on Instagram"
+                  aria-label="Instagram profile"
+                >
+                  <Instagram className="w-3.5 h-3.5 text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <span>Instagram</span>
+                </a>
+
+                <a
+                  href={SCHOOL_DATA.socialLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-[#1877F2] hover:bg-[#166fe5] shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
+                  title="Follow ASAPL International on Facebook"
+                  aria-label="Facebook page"
+                >
+                  <Facebook className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                  <span>Facebook</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Column 2: Quick Links */}
@@ -238,17 +282,48 @@ export default function Footer() {
             <Link href="/contact-us" className="hover:text-slate-300">Terms of Enrolment</Link>
           </div>
 
-          <div className="flex items-center space-x-3">
-            <span className="text-xs text-slate-400">Follow Our Journey:</span>
-            <span className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:text-coral-400 hover:bg-slate-700 transition-colors cursor-pointer" title="Facebook placeholder">
-              <Facebook className="w-4 h-4" />
-            </span>
-            <span className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:text-coral-400 hover:bg-slate-700 transition-colors cursor-pointer" title="Instagram placeholder">
-              <Instagram className="w-4 h-4" />
-            </span>
-            <span className="w-8 h-8 rounded-full bg-slate-800 text-slate-400 flex items-center justify-center hover:text-coral-400 hover:bg-slate-700 transition-colors cursor-pointer" title="YouTube placeholder">
-              <Youtube className="w-4 h-4" />
-            </span>
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <span className="text-xs font-semibold text-slate-300">Follow Our School:</span>
+            <div className="flex flex-wrap items-center gap-2">
+              {/* YouTube Button */}
+              <a
+                href={SCHOOL_DATA.socialLinks.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-red-600 hover:bg-red-700 shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
+                title="Watch ASAPL International on YouTube"
+                aria-label="YouTube channel"
+              >
+                <Youtube className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span>YouTube</span>
+              </a>
+
+              {/* Instagram Button */}
+              <a
+                href={SCHOOL_DATA.socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:via-pink-700 hover:to-amber-600 shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
+                title="Follow ASAPL International on Instagram"
+                aria-label="Instagram profile"
+              >
+                <Instagram className="w-3.5 h-3.5 text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span>Instagram</span>
+              </a>
+
+              {/* Facebook Button */}
+              <a
+                href={SCHOOL_DATA.socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-[#1877F2] hover:bg-[#166fe5] shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
+                title="Follow ASAPL International on Facebook"
+                aria-label="Facebook page"
+              >
+                <Facebook className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span>Facebook</span>
+              </a>
+            </div>
           </div>
         </div>
 
