@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://asaplinternational.edu.in/sitemap.xml",
+    sitemap: "https://www.aspal.co.in/sitemap.xml",
   };
 }

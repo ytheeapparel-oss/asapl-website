@@ -91,12 +91,12 @@ export default async function ParentingArticlePage({ params }: Props) {
       name: "ASAPL International School",
       logo: {
         "@type": "ImageObject",
-        url: "https://asaplinternational.edu.in/logo.png",
+        url: "https://www.aspal.co.in/logo.png",
       },
     },
     mainEntityOfPage: {
       "@type": "WebPage",
-      "@id": `https://asaplinternational.edu.in/happy-parenting/${article.slug}`,
+      "@id": `https://www.aspal.co.in/happy-parenting/${article.slug}`,
     },
   };
 

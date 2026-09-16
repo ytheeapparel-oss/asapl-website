@@ -6,6 +6,7 @@ export interface SchoolInfo {
   phone: string;
   displayPhone: string;
   email: string;
+  websiteUrl: string;
   socialLinks: {
     youtube: string;
     instagram: string;
@@ -35,6 +36,7 @@ export const SCHOOL_DATA: SchoolInfo = {
   phone: "9873539445",
   displayPhone: "+91 9873539445",
   email: "Rakeshpandey2001@gmail.com",
+  websiteUrl: "https://www.aspal.co.in",
   socialLinks: {
     youtube: "https://www.youtube.com/@aspaljuniors",
     instagram: "https://www.instagram.com/aspaljuniors_51",

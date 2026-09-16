@@ -17,13 +17,13 @@ export default function Breadcrumbs({ items }: BreadcrumbsProps) {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://asaplinternational.edu.in",
+      item: "https://www.aspal.co.in",
     },
     ...items.map((item, idx) => ({
       "@type": "ListItem",
       position: idx + 2,
       name: item.label,
-      ...(item.href ? { item: `https://asaplinternational.edu.in${item.href}` } : {}),
+      ...(item.href ? { item: `https://www.aspal.co.in${item.href}` } : {}),
     })),
   ];
 

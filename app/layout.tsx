@@ -28,7 +28,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://asaplinternational.edu.in"),
+  metadataBase: new URL("https://www.aspal.co.in"),
   title: {
     default: "ASAPL International | Best Play School & Primary School in Sector 55, Noida",
     template: "%s | ASAPL International School Noida",
@@ -76,13 +76,13 @@ export const metadata: Metadata = {
     title: "ASAPL International | Primary School in Sector 55, Noida",
     description:
       "Little Steps. Big Dreams. A joyful primary school in Sector 55, Noida cultivating curiosity, creativity, and confident futures for young learners.",
-    url: "https://asaplinternational.edu.in",
+    url: "https://www.aspal.co.in",
     siteName: "ASAPL International School",
     locale: "en_IN",
     type: "website",
     images: [
       {
-        url: "https://asaplinternational.edu.in/images/hero-indian-kids.jpg",
+        url: "https://www.aspal.co.in/images/hero-indian-kids.jpg",
         width: 1200,
         height: 675,
         alt: "Happy Indian children learning together at ASAPL International School Noida",
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
     description:
       "Little Steps. Big Dreams. A joyful primary school in Sector 55, Noida. Admissions open for 2025-26.",
     images: [
-      "https://asaplinternational.edu.in/images/hero-indian-kids.jpg",
+      "https://www.aspal.co.in/images/hero-indian-kids.jpg",
     ],
   },
   robots: {
@@ -121,7 +121,7 @@ export default function RootLayout({
     "@type": "School",
     name: SCHOOL_DATA.name,
     description: SCHOOL_DATA.subTagline,
-    url: "https://asaplinternational.edu.in",
+    url: "https://www.aspal.co.in",
     telephone: SCHOOL_DATA.displayPhone,
     email: SCHOOL_DATA.email,
     address: {
@@ -140,7 +140,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: SCHOOL_DATA.name,
-    url: "https://asaplinternational.edu.in",
+    url: "https://www.aspal.co.in",
   };
 
   return (

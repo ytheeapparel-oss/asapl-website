@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { PARENTING_ARTICLES } from "@/data/parenting-articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://asaplinternational.edu.in";
+  const baseUrl = "https://www.aspal.co.in";
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {
