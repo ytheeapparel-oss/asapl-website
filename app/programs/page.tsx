@@ -22,9 +22,17 @@ import ProgramShowcase from "@/components/ProgramShowcase";
 import { PROGRAMS_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "Academic & Creative Programs | Primary Curriculum Sector 55 Noida",
+  title: "Play School & Primary Programs | Phonics & STEM in Sector 55 Noida | ASAPL",
   description:
-    "Explore the colorful, child-centered academic and creative programs at ASAPL International, Sector 55, Noida. Phonics, numeracy, visual arts, music, physical agility, and STEM exploration.",
+    "Explore colorful early childhood and primary school programs at ASAPL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, Kindergarten, 42+ Synthetic Phonics, Concrete Math CPA, Fine Arts, and Kids Yoga.",
+  keywords: [
+    "play school in sector 55 noida",
+    "pre school curriculum noida",
+    "kindergarten learning program noida",
+    "synthetic phonics classes noida",
+    "concrete mathematics school noida",
+    "early childhood education sector 55 noida",
+  ],
 };
 
 export default function ProgramsPage() {

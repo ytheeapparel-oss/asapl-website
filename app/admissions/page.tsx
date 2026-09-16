@@ -26,9 +26,18 @@ import AdmissionsTourShowcase from "@/components/AdmissionsTourShowcase";
 import { SCHOOL_DATA, FAQ_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "Admissions 2025–26 | Primary School Admission in Sector 55 Noida",
+  title: "Nursery & Primary School Admissions 2025–26 | Sector 55 Noida | ASAPL International",
   description:
-    "Apply for primary school admissions for 2025-26 at ASAPL International, Sector 55, Noida. Step-by-step admission process, eligibility guidelines, required documents, and online enquiry form.",
+    "Admissions open for 2025-26 at ASAPL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, LKG, UKG & Primary school admissions. Transparent process, age eligibility criteria, campus visits, and online application form.",
+  keywords: [
+    "nursery admission in noida 2025-26",
+    "school admission sector 55 noida",
+    "pre school admission noida",
+    "primary school admission criteria noida",
+    "play school admission near sector 56 noida",
+    "kindergarten admissions sector 62 noida",
+    "nursery admission form noida",
+  ],
 };
 
 export default function AdmissionsPage() {

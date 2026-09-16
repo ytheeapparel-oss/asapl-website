@@ -30,20 +30,39 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://asaplinternational.edu.in"),
   title: {
-    default: "ASAPL International | Primary School in Sector 55, Noida",
+    default: "ASAPL International | Best Play School & Primary School in Sector 55, Noida",
     template: "%s | ASAPL International School Noida",
   },
   description:
-    "ASAPL International is a premier primary school in Sector 55, Noida. Happy Children, Creative Learning, Safe Environment, and Caring Teachers. Admissions open for 2025-26.",
+    "ASAPL International (Aspal Juniors) is a top-ranked play school and primary school in Sector 55, Noida. Experiential learning, 42+ synthetic phonics, concrete math, and 100% CCTV child-safe campus. Admissions open 2025–26 for Sectors 55, 56, 62, 12, 22.",
   keywords: [
-    "Primary school in Noida",
-    "Primary school in Sector 55 Noida",
-    "School in Sector 55 Noida",
-    "Best primary schools in Noida",
-    "Admissions for primary school in Noida",
-    "Child-friendly school in Noida",
-    "Primary education in Noida",
+    // Core Sector 55 Rankings
+    "best school in sector 55 noida",
+    "play school in sector 55 noida",
+    "pre school in sector 55 noida",
+    "primary school in sector 55 noida",
+    "nursery admission in sector 55 noida",
+    "kids school sector 55 noida",
+    "kindergarten in sector 55 noida",
+    // Surrounding Noida Sectors
+    "play school near sector 56 noida",
+    "best primary school near sector 62 noida",
+    "nursery admission sector 12 noida",
+    "play school in sector 22 noida",
+    "schools near sector 53 noida",
+    "pre school near sector 57 noida",
+    // City-Wide Noida High Intent
+    "best play school in noida",
+    "top 10 play schools in noida",
+    "best primary schools in noida",
+    "nursery school admission in noida 2025-26",
+    "play school with cctv in noida",
+    "experiential learning primary school noida",
+    "synthetic phonics classes for kids noida",
+    // Brand & Variations
     "ASAPL International",
+    "Aspal Juniors",
+    "ASAPL International School Noida",
   ],
   authors: [{ name: "ASAPL International School" }],
   creator: "ASAPL International",
