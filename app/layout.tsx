@@ -123,8 +123,10 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "School",
     name: SCHOOL_DATA.name,
+    alternateName: ["Aspal Juniors", SCHOOL_DATA.shortName],
     description: SCHOOL_DATA.subTagline,
     url: "https://www.aspal.co.in",
+    image: "https://www.aspal.co.in/images/hero-indian-kids.jpg",
     telephone: SCHOOL_DATA.displayPhone,
     email: SCHOOL_DATA.email,
     address: {
@@ -135,6 +137,16 @@ export default function RootLayout({
       postalCode: "201301",
       addressCountry: "IN",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: "28.5993",
+      longitude: "77.3517",
+    },
+    sameAs: [
+      SCHOOL_DATA.socialLinks.youtube,
+      SCHOOL_DATA.socialLinks.instagram,
+      SCHOOL_DATA.socialLinks.facebook,
+    ],
     openingHours: "Mo-Sa 08:00-15:30",
     priceRange: "$$",
   };
