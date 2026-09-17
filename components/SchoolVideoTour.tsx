@@ -81,7 +81,7 @@ export default function SchoolVideoTour() {
           title="Watch Our Joyful Learning Environment in Action"
           highlightWord="in Action"
           highlightColor="text-coral-500"
-          subtitle="Experience the warmth, smiles, and vibrant classroom atmosphere of ASAPL International in Sector 55, Noida through our video tour."
+          subtitle="Experience the warmth, smiles, and vibrant classroom atmosphere of ASPAL International in Sector 55, Noida through our video tour."
         />
 
         {/* Video Tabs Selector */}
@@ -128,7 +128,7 @@ export default function SchoolVideoTour() {
               <div className="absolute top-4 left-4 z-20 flex items-center space-x-2">
                 <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-slate-900/80 backdrop-blur-md text-white border border-white/20">
                   <span className="w-2 h-2 rounded-full bg-red-500 animate-ping mr-2"></span>
-                  ASAPL Campus Video
+                  ASPAL Campus Video
                 </span>
                 <span className="hidden sm:inline-block px-3 py-1 rounded-full text-xs font-bold bg-white/20 backdrop-blur-md text-white">
                   Sector 55, Noida

@@ -199,7 +199,7 @@ export default function AdminDashboardPage() {
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", `asapl-enquiries-${new Date().toISOString().slice(0, 10)}.csv`);
+    link.setAttribute("download", `aspal-enquiries-${new Date().toISOString().slice(0, 10)}.csv`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -214,8 +214,8 @@ export default function AdminDashboardPage() {
     const phoneWithCountry = rawDigits.length === 10 ? `91${rawDigits}` : rawDigits;
     const greeting =
       enquiry.type === "admission"
-        ? `Namaste ${enquiry.name}! Greetings from ASAPL International School, Sector 55 Noida. We received your admission enquiry regarding ${enquiry.child_name || "your child"} for ${enquiry.grade || "our academic program"}. We would love to welcome you for a campus tour. When would be a convenient time for a brief call?`
-        : `Namaste ${enquiry.name}! Greetings from ASAPL International School, Sector 55 Noida. Thank you for reaching out to us. How can we assist you today?`;
+        ? `Namaste ${enquiry.name}! Greetings from ASPAL International School, Sector 55 Noida. We received your admission enquiry regarding ${enquiry.child_name || "your child"} for ${enquiry.grade || "our academic program"}. We would love to welcome you for a campus tour. When would be a convenient time for a brief call?`
+        : `Namaste ${enquiry.name}! Greetings from ASPAL International School, Sector 55 Noida. Thank you for reaching out to us. How can we assist you today?`;
 
     return `https://wa.me/${phoneWithCountry}?text=${encodeURIComponent(greeting)}`;
   };
@@ -247,7 +247,7 @@ export default function AdminDashboardPage() {
             <div>
               <div className="flex items-center space-x-2">
                 <h1 className="font-heading font-extrabold text-lg text-white leading-none">
-                  ASAPL International
+                  ASPAL International
                 </h1>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-sunshine-400 text-slate-950 uppercase tracking-wider">
                   Admin Portal
@@ -681,7 +681,7 @@ export default function AdminDashboardPage() {
 
                         {enquiry.email && (
                           <a
-                            href={`mailto:${enquiry.email}?subject=ASAPL International School Admission Enquiry`}
+                            href={`mailto:${enquiry.email}?subject=ASPAL International School Admission Enquiry`}
                             className="w-full inline-flex items-center justify-center px-3 py-2 rounded-xl text-xs font-bold bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors border border-slate-200"
                           >
                             <Mail className="w-3.5 h-3.5 mr-1.5 text-slate-500" />

@@ -14,7 +14,7 @@ interface CTASectionProps {
 
 export default function CTASection({
   title = "Ready to Begin Their Learning Adventure?",
-  subtitle = "Experience the joy, care, and colorful discovery of ASAPL International. Schedule a campus tour or inquire for 2025-26 admissions today.",
+  subtitle = "Experience the joy, care, and colorful discovery of ASPAL International. Schedule a campus tour or inquire for 2025-26 admissions today.",
   buttonPrimaryText = "Enquire for Admission",
   buttonPrimaryLink = "/admissions#enquiry-form",
   buttonSecondaryText = "Schedule a School Visit",

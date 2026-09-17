@@ -72,7 +72,7 @@ export default function HomePage() {
       {/* 1. HERO SECTION WITH ANIMATED LOOPING VIDEO */}
       <HeroVideo />
 
-      {/* 2. WELCOME TO ASAPL INTERNATIONAL (SPLIT-SCREEN STORYTELLING - FULL BREADTH) */}
+      {/* 2. WELCOME TO ASPAL INTERNATIONAL (SPLIT-SCREEN STORYTELLING - FULL BREADTH) */}
       <section className="py-24 lg:py-32 xl:py-36 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20 w-full max-w-[1720px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 xl:gap-20 items-center">
           
@@ -115,12 +115,12 @@ export default function HomePage() {
             
             <SectionHeading
               align="left"
-              badge="Welcome to ASAPL International"
+              badge="Welcome to ASPAL International"
               badgeColor="sunshine"
               title="Where Curiosity Blossoms Into Radiant Confidence"
               highlightWord="Curiosity"
               highlightColor="text-coral-500"
-              subtitle="Every child enters this world with an innate spark of wonder. At ASAPL International in Sector 55, Noida, we build an emotionally secure, colorful sanctuary where young minds flourish through experiential learning, caring guidance, and boundless joyful discovery."
+              subtitle="Every child enters this world with an innate spark of wonder. At ASPAL International in Sector 55, Noida, we build an emotionally secure, colorful sanctuary where young minds flourish through experiential learning, caring guidance, and boundless joyful discovery."
             />
 
             <div className="space-y-4 pt-2 text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -179,14 +179,14 @@ export default function HomePage() {
         <SchoolVideoTour />
       </div>
 
-      {/* 4. WHY PARENTS CHOOSE ASAPL (FULL BREADTH 6-CARD GRID) */}
+      {/* 4. WHY PARENTS CHOOSE ASPAL (FULL BREADTH 6-CARD GRID) */}
       <section className="py-24 lg:py-32 xl:py-36 bg-white border-y border-slate-100 relative">
         <div className="w-full max-w-[1720px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16 xl:px-20">
           
           <SectionHeading
-            badge="The ASAPL Difference"
+            badge="The ASPAL Difference"
             badgeColor="ocean"
-            title="Why Families in Noida Choose ASAPL International"
+            title="Why Families in Noida Choose ASPAL International"
             highlightWord="Choose"
             highlightColor="text-sunshine-600"
             subtitle="Choosing a primary school is one of the most consequential decisions for your child. Here is how we cultivate a supportive, joyful, and rigorous foundational journey."
@@ -382,7 +382,7 @@ export default function HomePage() {
           <SectionHeading
             badge="Campus Moments"
             badgeColor="sunshine"
-            title="School Life at ASAPL International"
+            title="School Life at ASPAL International"
             highlightWord="School Life"
             highlightColor="text-ocean-600"
             subtitle="Glance through our vibrant classrooms, art studios, and energetic playground celebrations in Sector 55, Noida."
@@ -481,7 +481,7 @@ export default function HomePage() {
           <SectionHeading
             badge="Parent Voices"
             badgeColor="sunshine"
-            title="What Parents Say About ASAPL"
+            title="What Parents Say About ASPAL"
             highlightWord="Say"
             highlightColor="text-coral-500"
             subtitle="Parent trust is our greatest pride. Hear reflections from families who have chosen our Sector 55, Noida campus."
@@ -501,7 +501,7 @@ export default function HomePage() {
           title="Frequently Asked Admissions Questions"
           highlightWord="Questions"
           highlightColor="text-sunshine-600"
-          subtitle="Search or filter through common parent questions about enrolling at ASAPL International in Sector 55, Noida."
+          subtitle="Search or filter through common parent questions about enrolling at ASPAL International in Sector 55, Noida."
         />
 
         <div className="mt-14">
@@ -603,7 +603,7 @@ export default function HomePage() {
                   <span>Call {SCHOOL_DATA.displayPhone}</span>
                 </a>
                 <a
-                  href={`https://wa.me/91${SCHOOL_DATA.phone}?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20ASAPL%20International%20admissions`}
+                  href={`https://wa.me/91${SCHOOL_DATA.phone}?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20ASPAL%20International%20admissions`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-7 py-3.5 rounded-full text-sm font-bold text-white bg-emerald-600 hover:bg-emerald-700 shadow-playful transition-all"
@@ -618,7 +618,7 @@ export default function HomePage() {
             <div className="lg:col-span-6">
               <div className="h-full min-h-[420px] rounded-3xl overflow-hidden shadow-xl border-4 border-white relative bg-slate-100 flex flex-col">
                 <iframe
-                  title="ASAPL International Location Map Sector 55 Noida"
+                  title="ASPAL International Location Map Sector 55 Noida"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14013.109015949216!2d77.34861445!3d28.5914619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce50f38b4d8d7%3A0x7d28713d8d741cb3!2sSector%2055%2C%20Noida%2C%20Uttar%20Pradesh%20201301!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"

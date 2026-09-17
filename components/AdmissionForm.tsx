@@ -169,7 +169,7 @@ export default function AdmissionForm() {
               Enquiry Received with Joy!
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              Thank you for considering <span className="font-bold text-slate-800">ASAPL International</span> for {formData.childName || "your child"}. Our admissions counselor in Sector 55, Noida will contact you within 24 business hours at <span className="font-semibold text-ocean-600">{formData.phone}</span>.
+              Thank you for considering <span className="font-bold text-slate-800">ASPAL International</span> for {formData.childName || "your child"}. Our admissions counselor in Sector 55, Noida will contact you within 24 business hours at <span className="font-semibold text-ocean-600">{formData.phone}</span>.
             </p>
           </div>
 
@@ -434,7 +434,7 @@ export default function AdmissionForm() {
                 className="mt-0.5 rounded text-coral-500 focus:ring-coral-400"
               />
               <span>
-                I agree to be contacted by ASAPL International via call/WhatsApp regarding school admission details and campus visits. We respect your family’s privacy.
+                I agree to be contacted by ASPAL International via call/WhatsApp regarding school admission details and campus visits. We respect your family’s privacy.
               </span>
             </label>
             {errors.privacyConsent && (

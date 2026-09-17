@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!article) {
     return {
-      title: "Article Not Found | ASAPL International",
+      title: "Article Not Found | ASPAL International",
     };
   }
 
@@ -88,7 +88,7 @@ export default async function ParentingArticlePage({ params }: Props) {
     },
     publisher: {
       "@type": "Organization",
-      name: "ASAPL International School",
+      name: "ASPAL International School",
       logo: {
         "@type": "ImageObject",
         url: "https://www.aspal.co.in/logo.png",

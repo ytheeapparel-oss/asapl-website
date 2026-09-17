@@ -76,7 +76,7 @@ export default function HeroVideo() {
         ) : (
           <Image
             src="/images/hero-indian-kids.jpg"
-            alt="Joyful Indian primary school kids on campus at ASAPL International Noida"
+            alt="Joyful Indian primary school kids on campus at ASPAL International Noida"
             fill
             priority
             sizes="100vw"
@@ -159,7 +159,7 @@ export default function HeroVideo() {
 
           {/* Supporting Message - Comprehensive, Rich & Professional */}
           <p className="mt-5 sm:mt-6 text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl leading-relaxed">
-            Welcome to <strong className="text-slate-900 font-bold">ASAPL International</strong> in Sector 55, Noida — where early childhood wonder transforms into lifelong academic confidence. Our experiential curriculum blends play-based inquiry, synthetic phonics, concrete CPA mathematics, and expressive arts with compassionate 1:12 teacher mentorship in a secure, 100% CCTV-monitored campus.
+            Welcome to <strong className="text-slate-900 font-bold">ASPAL International</strong> in Sector 55, Noida — where early childhood wonder transforms into lifelong academic confidence. Our experiential curriculum blends play-based inquiry, synthetic phonics, concrete CPA mathematics, and expressive arts with compassionate 1:12 teacher mentorship in a secure, 100% CCTV-monitored campus.
           </p>
 
           {/* Key Quick Highlight Pills */}

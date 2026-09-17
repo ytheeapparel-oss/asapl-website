@@ -16,7 +16,7 @@ export default function ContactVisitShowcase() {
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <Image
           src="/images/contact-dussehra-values.jpg"
-          alt="Moral education and Dussehra character artwork showcase at ASAPL International Sector 55 Noida"
+          alt="Moral education and Dussehra character artwork showcase at ASPAL International Sector 55 Noida"
           fill
           priority
           sizes="100vw"
@@ -62,7 +62,7 @@ export default function ContactVisitShowcase() {
           </h2>
 
           <p className="mt-5 text-base sm:text-xl text-slate-700 font-medium max-w-2xl mx-auto leading-relaxed">
-            Experience the warmth, moral values, and colorful creative energy of ASAPL International in person. Schedule a guided walkthrough with our admissions educators.
+            Experience the warmth, moral values, and colorful creative energy of ASPAL International in person. Schedule a guided walkthrough with our admissions educators.
           </p>
 
           {/* Action CTA Buttons */}
@@ -134,7 +134,7 @@ export default function ContactVisitShowcase() {
             <div className="relative w-full h-[75vh] rounded-2xl overflow-hidden bg-slate-950 flex items-center justify-center">
               <Image
                 src="/images/contact-dussehra-values.jpg"
-                alt="Moral Education Dussehra Artwork at ASAPL International Sector 55 Noida"
+                alt="Moral Education Dussehra Artwork at ASPAL International Sector 55 Noida"
                 fill
                 className="object-contain"
                 priority
@@ -144,7 +144,7 @@ export default function ContactVisitShowcase() {
 
             <div className="p-4 text-center">
               <h4 className="font-heading text-lg font-bold text-white">
-                Dussehra Values & Character Education Artwork • ASAPL International
+                Dussehra Values & Character Education Artwork • ASPAL International
               </h4>
               <p className="text-xs text-slate-300 mt-1">
                 Sector 55, Noida campus — Teaching young minds to conquer anger, greed, ego, and cultivate compassion and family bonding.

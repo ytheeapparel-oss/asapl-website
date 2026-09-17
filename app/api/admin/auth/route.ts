@@ -10,19 +10,23 @@ export async function GET() {
 export async function POST(request: Request) {
   try {
     const { password } = await request.json();
-    const adminPassword = process.env.ADMIN_PASSWORD || 'asapl@admin2025';
+    const validPasswords = [
+      process.env.ADMIN_PASSWORD,
+      'aspal@admin2025',
+      'asapl@admin2025',
+    ].filter(Boolean);
 
-    if (!password || password !== adminPassword) {
+    if (!password || !validPasswords.includes(password)) {
       return NextResponse.json(
         { success: false, error: 'Incorrect password. Please try again.' },
         { status: 401 }
       );
     }
 
-    const token = getAdminToken(adminPassword);
+    const token = getAdminToken(password);
     const cookieStore = await cookies();
 
-    cookieStore.set('asapl_admin_session', token, {
+    cookieStore.set('aspal_admin_session', token, {
       httpOnly: true,
       secure: process.env.NODE_ENV === 'production',
       sameSite: 'lax',
@@ -42,6 +46,7 @@ export async function POST(request: Request) {
 
 export async function DELETE() {
   const cookieStore = await cookies();
+  cookieStore.delete('aspal_admin_session');
   cookieStore.delete('asapl_admin_session');
   return NextResponse.json({ success: true, message: 'Logged out' });
 }

@@ -21,7 +21,7 @@ import { PARENTING_ARTICLES, ParentingArticle } from "@/data/parenting-articles"
 export const metadata: Metadata = {
   title: "Happy Parenting Hub | Child Development & Learning Guides Noida",
   description:
-    "Expert parenting advice, early reading phonics strategies, screen-time balance, and healthy nutrition tips curated by ASAPL International educators for families in Noida.",
+    "Expert parenting advice, early reading phonics strategies, screen-time balance, and healthy nutrition tips curated by ASPAL International educators for families in Noida.",
 };
 
 export default function HappyParentingPage() {
@@ -46,7 +46,7 @@ export default function HappyParentingPage() {
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Image
             src="/images/toddler-play.jpg"
-            alt="Young Indian children playing and learning happily at ASAPL International Sector 55 Noida"
+            alt="Young Indian children playing and learning happily at ASPAL International Sector 55 Noida"
             fill
             priority
             sizes="100vw"
@@ -78,7 +78,7 @@ export default function HappyParentingPage() {
             </h1>
 
             <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl mx-auto leading-relaxed">
-              Explore practical, heartwarming, and expert-curated developmental articles written by the educators and child psychologists at ASAPL International. From managing healthy screen habits to creative phonics at home and balanced nutrition, we partner with you on every step of your child&apos;s journey.
+              Explore practical, heartwarming, and expert-curated developmental articles written by the educators and child psychologists at ASPAL International. From managing healthy screen habits to creative phonics at home and balanced nutrition, we partner with you on every step of your child&apos;s journey.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-3xl text-xs sm:text-sm">

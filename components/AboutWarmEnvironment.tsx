@@ -16,7 +16,7 @@ export default function AboutWarmEnvironment() {
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <Image
           src="/images/about-christmas-kids.jpg"
-          alt="ASAPL International students and teachers celebrating Christmas with Santa Claus in Sector 55 Noida"
+          alt="ASPAL International students and teachers celebrating Christmas with Santa Claus in Sector 55 Noida"
           fill
           priority
           sizes="100vw"
@@ -123,7 +123,7 @@ export default function AboutWarmEnvironment() {
             <div className="relative w-full h-[75vh] rounded-2xl overflow-hidden bg-slate-950 flex items-center justify-center">
               <Image
                 src="/images/about-christmas-kids.jpg"
-                alt="ASAPL International students and teachers celebrating Christmas with Santa Claus in Sector 55 Noida"
+                alt="ASPAL International students and teachers celebrating Christmas with Santa Claus in Sector 55 Noida"
                 fill
                 className="object-contain"
                 priority
@@ -133,7 +133,7 @@ export default function AboutWarmEnvironment() {
 
             <div className="p-4 text-center">
               <h4 className="font-heading text-lg font-bold text-white">
-                Christmas Celebration & Winter Carnival • ASAPL International
+                Christmas Celebration & Winter Carnival • ASPAL International
               </h4>
               <p className="text-xs text-slate-300 mt-1">
                 Sector 55, Noida campus — Joyful smiles, colorful balloons, and festive cheer with Santa Claus!

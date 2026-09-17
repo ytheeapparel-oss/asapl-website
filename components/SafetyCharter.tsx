@@ -96,7 +96,7 @@ export default function SafetyCharter() {
           Our Sacred Commitment
         </span>
         <h3 className="font-heading text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
-          The ASAPL 12-Point Child Safety & Safeguarding Charter
+          The ASPAL 12-Point Child Safety & Safeguarding Charter
         </h3>
         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-2xl mx-auto">
           Because nothing is more precious than your child’s health, dignity, and emotional security. Every policy is enforced daily across our Sector 55, Noida campus.

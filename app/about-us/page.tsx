@@ -27,9 +27,9 @@ import AboutWarmEnvironment from "@/components/AboutWarmEnvironment";
 import { SCHOOL_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "About Us | ASAPL International Primary School Noida",
+  title: "About Us | ASPAL International Primary School Noida",
   description:
-    "Discover the philosophy, caring educators, and child-safe campus of ASAPL International in Sector 55, Noida. Cultivating confident learners through happy, experiential education.",
+    "Discover the philosophy, caring educators, and child-safe campus of ASPAL International in Sector 55, Noida. Cultivating confident learners through happy, experiential education.",
 };
 
 export default function AboutUsPage() {
@@ -55,12 +55,12 @@ export default function AboutUsPage() {
               title="A School Built on Wonder, Respect & Joy"
               highlightWord="Wonder"
               highlightColor="text-coral-500"
-              subtitle="ASAPL International was conceived with a singular heartfelt objective: to create a primary school in Sector 55, Noida where academic excellence never comes at the cost of childhood happiness."
+              subtitle="ASPAL International was conceived with a singular heartfelt objective: to create a primary school in Sector 55, Noida where academic excellence never comes at the cost of childhood happiness."
             />
 
             <div className="space-y-4 text-sm sm:text-base text-slate-700 leading-relaxed">
               <p>
-                In an era where early education often resembles high-pressure testing, ASAPL International returns to the essence of childhood: playful inquiry, multisensory wonder, and empathetic relationships between teachers and children.
+                In an era where early education often resembles high-pressure testing, ASPAL International returns to the essence of childhood: playful inquiry, multisensory wonder, and empathetic relationships between teachers and children.
               </p>
               <p>
                 Located in Sector 55, Noida, our campus was deliberately designed with open, sunny classrooms, child-scale tactile furniture, lush outdoor green corners, and interactive learning studios where children develop foundational literacy, numeracy, and social-emotional maturity at their own developmental pace.
@@ -83,7 +83,7 @@ export default function AboutUsPage() {
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
               <Image
                 src="/images/hero-indian-kids.jpg"
-                alt="Cute smiling Indian primary school students at ASAPL International Noida"
+                alt="Cute smiling Indian primary school students at ASPAL International Noida"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -149,7 +149,7 @@ export default function AboutUsPage() {
           <SectionHeading
             badge="Our Pedagogy"
             badgeColor="coral"
-            title="The 5 ASAPL Educational Principles"
+            title="The 5 ASPAL Educational Principles"
             highlightWord="Principles"
             highlightColor="text-ocean-600"
             subtitle="How we bridge theory with joyful classroom practice every single day."
@@ -246,7 +246,7 @@ export default function AboutUsPage() {
                   [ADD PRINCIPAL’S NAME & CREDENTIALS]
                 </p>
                 <p className="text-xs text-slate-500">
-                  Head of School, ASAPL International, Sector 55, Noida
+                  Head of School, ASPAL International, Sector 55, Noida
                 </p>
               </div>
             </div>

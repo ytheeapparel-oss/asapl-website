@@ -34,7 +34,7 @@ const TESTIMONIALS: Testimonial[] = [
     parentName: "Parent of LKG Student",
     childGrade: "Kindergarten LKG",
     location: "Sector 62, Noida",
-    quote: "We were looking for a school in Noida that balances academic foundations with creative play. ASAPL International provides the exact gentle, happy, and disciplined environment we hoped for.",
+    quote: "We were looking for a school in Noida that balances academic foundations with creative play. ASPAL International provides the exact gentle, happy, and disciplined environment we hoped for.",
     isPlaceholder: true,
   },
 ];

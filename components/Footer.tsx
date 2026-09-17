@@ -42,7 +42,7 @@ export default function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="font-heading text-2xl font-bold text-white tracking-tight">
-                  ASAPL <span className="text-coral-400">International</span>
+                  ASPAL <span className="text-coral-400">International</span>
                 </span>
                 <span className="text-xs text-slate-400 font-semibold">
                   Primary School • Sector 55, Noida
@@ -97,7 +97,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-red-600 hover:bg-red-700 shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
-                  title="Watch ASAPL International on YouTube"
+                  title="Watch ASPAL International on YouTube"
                   aria-label="YouTube channel"
                 >
                   <Youtube className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -109,7 +109,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:via-pink-700 hover:to-amber-600 shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
-                  title="Follow ASAPL International on Instagram"
+                  title="Follow ASPAL International on Instagram"
                   aria-label="Instagram profile"
                 >
                   <Instagram className="w-3.5 h-3.5 text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -121,7 +121,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-[#1877F2] hover:bg-[#166fe5] shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
-                  title="Follow ASAPL International on Facebook"
+                  title="Follow ASPAL International on Facebook"
                   aria-label="Facebook page"
                 >
                   <Facebook className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -274,7 +274,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-400 gap-4">
           <div className="flex flex-wrap items-center gap-4 text-center md:text-left">
-            <span>© {new Date().getFullYear()} ASAPL International. All rights reserved.</span>
+            <span>© {new Date().getFullYear()} ASPAL International. All rights reserved.</span>
             <span className="hidden sm:inline">•</span>
             <Link href="/contact-us" className="hover:text-slate-300">Privacy Policy</Link>
             <span>•</span>
@@ -301,7 +301,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-red-600 hover:bg-red-700 shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
-                title="Watch ASAPL International on YouTube"
+                title="Watch ASPAL International on YouTube"
                 aria-label="YouTube channel"
               >
                 <Youtube className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -314,7 +314,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:via-pink-700 hover:to-amber-600 shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
-                title="Follow ASAPL International on Instagram"
+                title="Follow ASPAL International on Instagram"
                 aria-label="Instagram profile"
               >
                 <Instagram className="w-3.5 h-3.5 text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -327,7 +327,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold text-white bg-[#1877F2] hover:bg-[#166fe5] shadow-sm transition-all transform hover:scale-105 active:scale-95 group"
-                title="Follow ASAPL International on Facebook"
+                title="Follow ASPAL International on Facebook"
                 aria-label="Facebook page"
               >
                 <Facebook className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -340,7 +340,7 @@ export default function Footer() {
         {/* Responsible Transparency Disclaimer Note */}
         <div className="mt-6 pt-4 border-t border-slate-800/60 text-[11px] text-slate-400 text-center">
           <p>
-            * Note for Parents: Admissions are strictly on a first-come, first-served basis subject to age readiness and classroom vacancy. ASAPL International follows child-friendly, stress-free interaction for foundational grade admissions.
+            * Note for Parents: Admissions are strictly on a first-come, first-served basis subject to age readiness and classroom vacancy. ASPAL International follows child-friendly, stress-free interaction for foundational grade admissions.
           </p>
         </div>
 

@@ -69,7 +69,7 @@ export default function Header() {
             <a 
               href={`tel:${SCHOOL_DATA.phone}`} 
               className="hidden md:flex items-center space-x-1 hover:text-sunshine-200 transition-colors font-bold"
-              aria-label="Call ASAPL International"
+              aria-label="Call ASPAL International"
             >
               <Phone className="w-3.5 h-3.5" />
               <span>{SCHOOL_DATA.displayPhone}</span>
@@ -78,7 +78,7 @@ export default function Header() {
             <a 
               href={`mailto:${SCHOOL_DATA.email}`} 
               className="hidden xl:flex items-center space-x-1 hover:text-sunshine-200 transition-colors"
-              aria-label="Email ASAPL International"
+              aria-label="Email ASPAL International"
             >
               <Mail className="w-3.5 h-3.5" />
               <span>{SCHOOL_DATA.email}</span>
@@ -93,7 +93,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold text-white bg-red-600 hover:bg-red-700 shadow-xs hover:shadow-md transition-all transform hover:scale-105 active:scale-95 group"
-                title="Watch ASAPL International on YouTube"
+                title="Watch ASPAL International on YouTube"
                 aria-label="YouTube channel"
               >
                 <Youtube className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -106,7 +106,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold text-white bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:from-purple-700 hover:via-pink-700 hover:to-amber-600 shadow-xs hover:shadow-md transition-all transform hover:scale-105 active:scale-95 group"
-                title="Follow ASAPL International on Instagram"
+                title="Follow ASPAL International on Instagram"
                 aria-label="Instagram profile"
               >
                 <Instagram className="w-3.5 h-3.5 text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -119,7 +119,7 @@ export default function Header() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-1 sm:space-x-1.5 px-2.5 sm:px-3 py-1 rounded-full text-xs font-bold text-white bg-[#1877F2] hover:bg-[#166fe5] shadow-xs hover:shadow-md transition-all transform hover:scale-105 active:scale-95 group"
-                title="Follow ASAPL International on Facebook"
+                title="Follow ASPAL International on Facebook"
                 aria-label="Facebook page"
               >
                 <Facebook className="w-3.5 h-3.5 fill-white text-white flex-shrink-0 group-hover:scale-110 transition-transform" />
@@ -144,7 +144,7 @@ export default function Header() {
           <Link 
             href="/" 
             className="flex items-center space-x-3 group"
-            aria-label="ASAPL International Home"
+            aria-label="ASPAL International Home"
           >
             {/* Playful Colorful Logo Icon */}
             <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-gradient-to-tr from-sunshine-400 via-coral-500 to-purple-500 p-0.5 shadow-md group-hover:scale-105 transition-transform">
@@ -161,7 +161,7 @@ export default function Header() {
             <div className="flex flex-col">
               <div className="flex items-center space-x-2">
                 <span className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-slate-900 group-hover:text-ocean-600 transition-colors leading-tight">
-                  ASAPL <span className="text-coral-500">International</span>
+                  ASPAL <span className="text-coral-500">International</span>
                 </span>
                 <span className="hidden md:inline-block px-2 py-0.5 text-[10px] font-bold rounded-md bg-amber-100 text-amber-800 border border-amber-200/80">
                   School
@@ -254,7 +254,7 @@ export default function Header() {
                     A
                   </div>
                   <span className="font-heading font-bold text-base text-slate-900">
-                    ASAPL International
+                    ASPAL International
                   </span>
                 </div>
                 <button

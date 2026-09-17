@@ -16,7 +16,7 @@ export default function AdmissionsTourShowcase() {
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <Image
           src="/images/admission-dussehra-kids.jpg"
-          alt="Values-based learning and creative festival artwork showcase at ASAPL International Sector 55 Noida"
+          alt="Values-based learning and creative festival artwork showcase at ASPAL International Sector 55 Noida"
           fill
           priority
           sizes="100vw"
@@ -62,7 +62,7 @@ export default function AdmissionsTourShowcase() {
           </h2>
 
           <p className="mt-5 text-base sm:text-xl text-slate-700 font-medium max-w-2xl mx-auto leading-relaxed">
-            Walk through our Sector 55, Noida campus, observe our joyful classes, and see why young children love learning at ASAPL International.
+            Walk through our Sector 55, Noida campus, observe our joyful classes, and see why young children love learning at ASPAL International.
           </p>
 
           {/* Action CTA Buttons */}
@@ -123,7 +123,7 @@ export default function AdmissionsTourShowcase() {
             <div className="relative w-full h-[75vh] rounded-2xl overflow-hidden bg-slate-950 flex items-center justify-center">
               <Image
                 src="/images/admission-dussehra-kids.jpg"
-                alt="Creative Dussehra Artwork and Character Education at ASAPL International Sector 55 Noida"
+                alt="Creative Dussehra Artwork and Character Education at ASPAL International Sector 55 Noida"
                 fill
                 className="object-contain"
                 priority
@@ -133,7 +133,7 @@ export default function AdmissionsTourShowcase() {
 
             <div className="p-4 text-center">
               <h4 className="font-heading text-lg font-bold text-white">
-                Creative Festival Artwork & Values-Based Learning • ASAPL International
+                Creative Festival Artwork & Values-Based Learning • ASPAL International
               </h4>
               <p className="text-xs text-slate-300 mt-1">
                 Sector 55, Noida campus — Celebrating timeless values, family bonding, and creative character building.

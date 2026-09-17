@@ -19,14 +19,14 @@ export default function CampusCelebrationShowcase() {
           title="Living Traditions & Creative Celebrations"
           highlightWord="Traditions"
           highlightColor="text-coral-500"
-          subtitle="At ASAPL International, Sector 55, Noida, cultural festivals foster moral values, creative artistic pride, and joyous teamwork."
+          subtitle="At ASPAL International, Sector 55, Noida, cultural festivals foster moral values, creative artistic pride, and joyous teamwork."
         />
 
         {/* Full Length & Breadth Image Showcase - 100% Clean & Clear (Zero Black Shade) */}
         <div className="mt-12 relative w-full h-[520px] sm:h-[680px] lg:h-[820px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-50 group">
           <Image
             src="/images/about-festive-kids.jpg"
-            alt="ASAPL International students celebrating cultural heritage with handcrafted Navratri artwork in Sector 55 Noida"
+            alt="ASPAL International students celebrating cultural heritage with handcrafted Navratri artwork in Sector 55 Noida"
             fill
             priority
             sizes="(max-width: 1720px) 100vw, 1720px"
@@ -98,7 +98,7 @@ export default function CampusCelebrationShowcase() {
             <div className="relative w-full h-[75vh] rounded-2xl overflow-hidden bg-slate-950 flex items-center justify-center">
               <Image
                 src="/images/about-festive-kids.jpg"
-                alt="ASAPL International students celebrate Navratri with handcrafted art in Sector 55 Noida"
+                alt="ASPAL International students celebrate Navratri with handcrafted art in Sector 55 Noida"
                 fill
                 className="object-contain"
                 priority
@@ -108,7 +108,7 @@ export default function CampusCelebrationShowcase() {
 
             <div className="p-4 text-center">
               <h4 className="font-heading text-lg font-bold text-white">
-                Handcrafted Navratri Bulletin Board Display • ASAPL International
+                Handcrafted Navratri Bulletin Board Display • ASPAL International
               </h4>
               <p className="text-xs text-slate-300 mt-1">
                 Sector 55, Noida campus — Celebrating unity, creativity, and cultural devotion.

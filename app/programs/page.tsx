@@ -22,9 +22,9 @@ import ProgramShowcase from "@/components/ProgramShowcase";
 import { PROGRAMS_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "Play School & Primary Programs | Phonics & STEM in Sector 55 Noida | ASAPL",
+  title: "Play School & Primary Programs | Phonics & STEM in Sector 55 Noida | ASPAL",
   description:
-    "Explore colorful early childhood and primary school programs at ASAPL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, Kindergarten, 42+ Synthetic Phonics, Concrete Math CPA, Fine Arts, and Kids Yoga.",
+    "Explore colorful early childhood and primary school programs at ASPAL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, Kindergarten, 42+ Synthetic Phonics, Concrete Math CPA, Fine Arts, and Kids Yoga.",
   keywords: [
     "play school in sector 55 noida",
     "pre school curriculum noida",
@@ -46,7 +46,7 @@ export default function ProgramsPage() {
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Image
             src="/images/art-creative.jpg"
-            alt="Indian primary school children engaged in joyful creative learning at ASAPL International Sector 55 Noida"
+            alt="Indian primary school children engaged in joyful creative learning at ASPAL International Sector 55 Noida"
             fill
             priority
             sizes="100vw"
@@ -80,7 +80,7 @@ export default function ProgramsPage() {
             </h1>
 
             <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl mx-auto leading-relaxed">
-              At ASAPL International, our thoughtfully sequenced programs blend hands-on sensory exploration, synthetic phonics, CPA mathematics, expressive arts, and physical agility. We nurture every facet of a child&apos;s cognitive, social, and emotional growth in an environment that sparks boundless enthusiasm for learning.
+              At ASPAL International, our thoughtfully sequenced programs blend hands-on sensory exploration, synthetic phonics, CPA mathematics, expressive arts, and physical agility. We nurture every facet of a child&apos;s cognitive, social, and emotional growth in an environment that sparks boundless enthusiasm for learning.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-3xl text-xs sm:text-sm">
@@ -130,7 +130,7 @@ export default function ProgramsPage() {
             A Curriculum Designed for the Whole Child
           </h2>
           <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
-            Children do not learn in rigid silos. At ASAPL International, our learning programs connect literacy, numeracy, science, music, and physical play into cohesive, thematic learning quests.
+            Children do not learn in rigid silos. At ASPAL International, our learning programs connect literacy, numeracy, science, music, and physical play into cohesive, thematic learning quests.
           </p>
         </div>
 

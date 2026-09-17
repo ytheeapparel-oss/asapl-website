@@ -16,7 +16,7 @@ export default function ProgramShowcase() {
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <Image
           src="/images/programs-festive-kids.jpg"
-          alt="ASAPL International primary school students showcasing creative cultural artwork and festival traditions in Sector 55 Noida"
+          alt="ASPAL International primary school students showcasing creative cultural artwork and festival traditions in Sector 55 Noida"
           fill
           priority
           sizes="100vw"
@@ -62,7 +62,7 @@ export default function ProgramShowcase() {
           </h2>
 
           <p className="mt-5 text-base sm:text-xl text-slate-700 font-medium max-w-2xl mx-auto leading-relaxed">
-            From foundational literacy and hands-on STEM to vibrant festival celebrations, classical arts, and extended daycare support—see how our children love learning every day at ASAPL International.
+            From foundational literacy and hands-on STEM to vibrant festival celebrations, classical arts, and extended daycare support—see how our children love learning every day at ASPAL International.
           </p>
 
           {/* Daycare & Extended Learning Callout Note */}
@@ -134,7 +134,7 @@ export default function ProgramShowcase() {
             <div className="relative w-full h-[75vh] rounded-2xl overflow-hidden bg-slate-950 flex items-center justify-center">
               <Image
                 src="/images/programs-festive-kids.jpg"
-                alt="Navratri Festival Celebration and Cultural Heritage Artwork by ASAPL International Primary Wing students"
+                alt="Navratri Festival Celebration and Cultural Heritage Artwork by ASPAL International Primary Wing students"
                 fill
                 className="object-contain"
                 priority
@@ -147,7 +147,7 @@ export default function ProgramShowcase() {
                 Navratri Celebration & 9 Forms of Maa Durga Artwork • Primary Wing
               </h4>
               <p className="text-xs text-slate-300 mt-1">
-                ASAPL International, Sector 55, Noida — Honoring Indian traditions, handmade artistic crafts, and cultural expression.
+                ASPAL International, Sector 55, Noida — Honoring Indian traditions, handmade artistic crafts, and cultural expression.
               </p>
             </div>
           </div>

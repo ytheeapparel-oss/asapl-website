@@ -22,9 +22,9 @@ import ContactVisitShowcase from "@/components/ContactVisitShowcase";
 import { SCHOOL_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "Contact Us & Campus Tour | ASAPL International Sector 55 Noida",
+  title: "Contact Us & Campus Tour | ASPAL International Sector 55 Noida",
   description:
-    "Contact ASAPL International primary school in Sector 55, Noida. Phone: +91 9873539445, Email: Rakeshpandey2001@gmail.com. Schedule a campus visit or submit an inquiry.",
+    "Contact ASPAL International primary school in Sector 55, Noida. Phone: +91 9873539445, Email: Rakeshpandey2001@gmail.com. Schedule a campus visit or submit an inquiry.",
 };
 
 export default function ContactUsPage() {
@@ -38,7 +38,7 @@ export default function ContactUsPage() {
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Image
             src="/images/caring-teacher.jpg"
-            alt="Caring Indian teacher mentoring young student at ASAPL International Sector 55 Noida"
+            alt="Caring Indian teacher mentoring young student at ASPAL International Sector 55 Noida"
             fill
             priority
             sizes="100vw"
@@ -65,7 +65,7 @@ export default function ContactUsPage() {
                 Welcome Your Family
               </span>
               <span className="block text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mt-2 font-body tracking-normal">
-                Visit Our Campus & Experience the ASAPL Difference
+                Visit Our Campus & Experience the ASPAL Difference
               </span>
             </h1>
 
@@ -221,12 +221,12 @@ export default function ContactUsPage() {
               </div>
 
               <h3 className="font-heading text-xl font-bold text-slate-900">
-                Getting to ASAPL International
+                Getting to ASPAL International
               </h3>
 
               <div className="space-y-2 text-xs sm:text-sm text-slate-600">
                 <p>
-                  <strong>Address:</strong> ASAPL International, Sector 55, Noida, Uttar Pradesh 201301, India.
+                  <strong>Address:</strong> ASPAL International, Sector 55, Noida, Uttar Pradesh 201301, India.
                 </p>
                 <p>
                   <strong>Nearby Landmarks:</strong> [ADD EXACT STREET ADDRESS & NEAREST NOTABLE LANDMARK IN SECTOR 55 NOIDA].
@@ -259,7 +259,7 @@ export default function ContactUsPage() {
                 Campus Location Map
               </span>
               <h3 className="font-heading text-xl font-bold text-slate-900">
-                ASAPL International • Sector 55, Noida
+                ASPAL International • Sector 55, Noida
               </h3>
             </div>
             <a
@@ -275,7 +275,7 @@ export default function ContactUsPage() {
           {/* Interactive Google Map Embed for Sector 55 Noida */}
           <div className="relative w-full h-[480px] lg:h-[550px] bg-slate-100">
             <iframe
-              title="ASAPL International School Location Map Sector 55 Noida"
+              title="ASPAL International School Location Map Sector 55 Noida"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14013.235544154427!2d77.34825964999999!3d28.59050965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5075677025f%3A0xb35a0928a30ec8b7!2sSector%2055%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
               width="100%"
               height="100%"

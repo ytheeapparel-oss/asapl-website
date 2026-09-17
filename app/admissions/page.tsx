@@ -26,9 +26,9 @@ import AdmissionsTourShowcase from "@/components/AdmissionsTourShowcase";
 import { SCHOOL_DATA, FAQ_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "Nursery & Primary School Admissions 2025–26 | Sector 55 Noida | ASAPL International",
+  title: "Nursery & Primary School Admissions 2025–26 | Sector 55 Noida | ASPAL International",
   description:
-    "Admissions open for 2025-26 at ASAPL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, LKG, UKG & Primary school admissions. Transparent process, age eligibility criteria, campus visits, and online application form.",
+    "Admissions open for 2025-26 at ASPAL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, LKG, UKG & Primary school admissions. Transparent process, age eligibility criteria, campus visits, and online application form.",
   keywords: [
     "nursery admission in noida 2025-26",
     "school admission sector 55 noida",
@@ -63,7 +63,7 @@ export default function AdmissionsPage() {
     {
       step: "04",
       title: "Enrolment & Welcome Pack",
-      desc: "Complete the document verification and registration formalities to secure your child’s seat for the 2025-26 academic term. Welcome to the ASAPL family!",
+      desc: "Complete the document verification and registration formalities to secure your child’s seat for the 2025-26 academic term. Welcome to the ASPAL family!",
       color: "bg-mint-500",
     },
   ];
@@ -116,7 +116,7 @@ export default function AdmissionsPage() {
         <div className="absolute inset-0 w-full h-full overflow-hidden">
           <Image
             src="/images/hero-indian-kids.jpg"
-            alt="Smiling Indian primary school students at ASAPL International Sector 55 Noida"
+            alt="Smiling Indian primary school students at ASPAL International Sector 55 Noida"
             fill
             priority
             sizes="100vw"
@@ -150,7 +150,7 @@ export default function AdmissionsPage() {
             </h1>
 
             <p className="mt-5 text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl mx-auto leading-relaxed">
-              Welcome to ASAPL International, Sector 55, Noida. We believe the admission experience should be welcoming and anxiety-free for every family. Explore our step-by-step admission roadmap, age eligibility criteria, campus tour bookings, and transparent documentation guidelines designed to support your child&apos;s joyful transition into school life.
+              Welcome to ASPAL International, Sector 55, Noida. We believe the admission experience should be welcoming and anxiety-free for every family. Explore our step-by-step admission roadmap, age eligibility criteria, campus tour bookings, and transparent documentation guidelines designed to support your child&apos;s joyful transition into school life.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 max-w-3xl text-xs sm:text-sm">
@@ -335,7 +335,7 @@ export default function AdmissionsPage() {
                 Fee Structure & Policy
               </h3>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                ASAPL International is committed to transparent, fair, and competitive fee policies for families residing in Noida.
+                ASPAL International is committed to transparent, fair, and competitive fee policies for families residing in Noida.
               </p>
 
               {/* Rule #22 Fee Placeholder Notice */}

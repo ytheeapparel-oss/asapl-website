@@ -29,8 +29,8 @@ export interface SchoolInfo {
 }
 
 export const SCHOOL_DATA: SchoolInfo = {
-  name: "ASAPL International",
-  shortName: "ASAPL",
+  name: "ASPAL International",
+  shortName: "ASPAL",
   tagline: "Little Steps. Big Dreams.",
   subTagline: "A premier primary and early childhood school in Sector 55, Noida, dedicated to nurturing curious minds, stage bravery, and confident futures through experiential learning, synthetic phonics, concrete mathematics, and compassionate 1:12 mentorship.",
   phone: "9873539445",
@@ -47,7 +47,7 @@ export const SCHOOL_DATA: SchoolInfo = {
     city: "Noida",
     state: "Uttar Pradesh",
     country: "India",
-    fullAddress: "ASAPL International, Sector 55, Noida, Uttar Pradesh 201301, India",
+    fullAddress: "ASPAL International, Sector 55, Noida, Uttar Pradesh 201301, India",
   },
   pillars: [
     "Happy Children",
@@ -188,7 +188,7 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Connects mathematical thinking directly to real-life situations",
     ],
     sampleActivities: [
-      "The ASAPL Fruit Market: weighing apples with balance scales",
+      "The ASPAL Fruit Market: weighing apples with balance scales",
       "Giant floor number-line hopping to add and subtract",
       "Creating 2D and 3D geometric creations using craft sticks and clay",
       "Sorting buttons by color, size, and number of holes",
@@ -410,8 +410,8 @@ export interface FAQItem {
 
 export const FAQ_DATA: FAQItem[] = [
   {
-    question: "Where is ASAPL International located in Noida?",
-    answer: "ASAPL International is conveniently located in Sector 55, Noida, Uttar Pradesh, offering easy accessibility for families living across Sector 55, Sector 56, Sector 62, Sector 12, Sector 22, and surrounding Noida localities.",
+    question: "Where is ASPAL International located in Noida?",
+    answer: "ASPAL International is conveniently located in Sector 55, Noida, Uttar Pradesh, offering easy accessibility for families living across Sector 55, Sector 56, Sector 62, Sector 12, Sector 22, and surrounding Noida localities.",
     category: "campus",
   },
   {

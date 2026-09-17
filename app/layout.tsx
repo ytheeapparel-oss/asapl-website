@@ -30,11 +30,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aspal.co.in"),
   title: {
-    default: "ASAPL International | Best Play School & Primary School in Sector 55, Noida",
-    template: "%s | ASAPL International School Noida",
+    default: "ASPAL International | Best Play School & Primary School in Sector 55, Noida",
+    template: "%s | ASPAL International School Noida",
   },
   description:
-    "ASAPL International (Aspal Juniors) is a top-ranked play school and primary school in Sector 55, Noida. Experiential learning, 42+ synthetic phonics, concrete math, and 100% CCTV child-safe campus. Admissions open 2025–26 for Sectors 55, 56, 62, 12, 22.",
+    "ASPAL International (Aspal Juniors) is a top-ranked play school and primary school in Sector 55, Noida. Experiential learning, 42+ synthetic phonics, concrete math, and 100% CCTV child-safe campus. Admissions open 2025–26 for Sectors 55, 56, 62, 12, 22.",
   keywords: [
     // Core Sector 55 Rankings
     "best school in sector 55 noida",
@@ -60,24 +60,24 @@ export const metadata: Metadata = {
     "experiential learning primary school noida",
     "synthetic phonics classes for kids noida",
     // Brand & Variations
-    "ASAPL International",
+    "ASPAL International",
     "Aspal Juniors",
-    "ASAPL International School Noida",
+    "ASPAL International School Noida",
   ],
-  authors: [{ name: "ASAPL International School" }],
-  creator: "ASAPL International",
-  publisher: "ASAPL International",
+  authors: [{ name: "ASPAL International School" }],
+  creator: "ASPAL International",
+  publisher: "ASPAL International",
   formatDetection: {
     telephone: true,
     email: true,
     address: true,
   },
   openGraph: {
-    title: "ASAPL International | Primary School in Sector 55, Noida",
+    title: "ASPAL International | Primary School in Sector 55, Noida",
     description:
       "Little Steps. Big Dreams. A joyful primary school in Sector 55, Noida cultivating curiosity, creativity, and confident futures for young learners.",
     url: "https://www.aspal.co.in",
-    siteName: "ASAPL International School",
+    siteName: "ASPAL International School",
     locale: "en_IN",
     type: "website",
     images: [
@@ -85,13 +85,13 @@ export const metadata: Metadata = {
         url: "https://www.aspal.co.in/images/hero-indian-kids.jpg",
         width: 1200,
         height: 675,
-        alt: "Happy Indian children learning together at ASAPL International School Noida",
+        alt: "Happy Indian children learning together at ASPAL International School Noida",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ASAPL International | Primary School in Sector 55, Noida",
+    title: "ASPAL International | Primary School in Sector 55, Noida",
     description:
       "Little Steps. Big Dreams. A joyful primary school in Sector 55, Noida. Admissions open for 2025-26.",
     images: [

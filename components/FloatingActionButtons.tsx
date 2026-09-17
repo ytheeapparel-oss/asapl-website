@@ -22,7 +22,7 @@ export default function FloatingActionButtons() {
   };
 
   const whatsappUrl = `https://wa.me/91${SCHOOL_DATA.phone}?text=${encodeURIComponent(
-    "Hello ASAPL International, I am inquiring about admission details for my child at your Sector 55, Noida campus."
+    "Hello ASPAL International, I am inquiring about admission details for my child at your Sector 55, Noida campus."
   )}`;
 
   return (
@@ -47,7 +47,7 @@ export default function FloatingActionButtons() {
           target="_blank"
           rel="noopener noreferrer"
           className="group flex items-center bg-[#25D366] hover:bg-[#20ba59] text-white py-2.5 px-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
-          aria-label="Chat on WhatsApp with ASAPL Admissions"
+          aria-label="Chat on WhatsApp with ASPAL Admissions"
         >
           <div className="w-5 h-5 flex items-center justify-center">
             <svg
@@ -66,7 +66,7 @@ export default function FloatingActionButtons() {
         <a
           href={`tel:${SCHOOL_DATA.phone}`}
           className="group flex items-center bg-ocean-500 hover:bg-ocean-600 text-white py-2.5 px-4 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5"
-          aria-label="Direct Phone Call to ASAPL International"
+          aria-label="Direct Phone Call to ASPAL International"
         >
           <Phone className="w-5 h-5" />
           <span className="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold pl-0 group-hover:pl-2">

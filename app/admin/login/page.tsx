@@ -77,7 +77,7 @@ export default function AdminLoginPage() {
           <School className="w-8 h-8 text-slate-950" />
         </div>
         <h2 className="font-heading text-3xl font-extrabold text-white tracking-tight">
-          ASAPL International
+          ASPAL International
         </h2>
         <p className="mt-2 text-sm text-slate-400 font-medium">
           Admissions & Enquiry Management Portal

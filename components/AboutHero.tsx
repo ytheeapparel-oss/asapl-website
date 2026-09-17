@@ -26,7 +26,7 @@ export default function AboutHero() {
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <Image
           src="/images/about-hero-kids.jpg"
-          alt="Cute Indian school kids performing in traditional costumes at ASAPL International Sector 55 Noida"
+          alt="Cute Indian school kids performing in traditional costumes at ASPAL International Sector 55 Noida"
           fill
           priority
           sizes="100vw"
@@ -38,7 +38,7 @@ export default function AboutHero() {
       <div className="relative z-20 w-full max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 pt-4 flex items-center justify-between">
         <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-slate-200 text-slate-800 text-xs font-bold uppercase tracking-wider shadow-lg">
           <Sun className="w-3.5 h-3.5 text-sunshine-600" />
-          <span>About ASAPL International • Sector 55, Noida</span>
+          <span>About ASPAL International • Sector 55, Noida</span>
         </div>
 
         {/* Expand/View Full Image Button */}
@@ -95,7 +95,7 @@ export default function AboutHero() {
 
           {/* Subtitle */}
           <p className="mt-5 sm:mt-6 text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl leading-relaxed">
-            Welcome to <strong className="text-slate-900 font-bold">ASAPL International</strong>, Sector 55, Noida — where children celebrate Indian cultural roots, build stage confidence, and cultivate lifelong academic wonder. Founded on principles of emotional safety, individualized attention, and joyful exploration, we shape compassionate, resilient young leaders prepared for tomorrow&apos;s world.
+            Welcome to <strong className="text-slate-900 font-bold">ASPAL International</strong>, Sector 55, Noida — where children celebrate Indian cultural roots, build stage confidence, and cultivate lifelong academic wonder. Founded on principles of emotional safety, individualized attention, and joyful exploration, we shape compassionate, resilient young leaders prepared for tomorrow&apos;s world.
           </p>
 
           {/* Quick Pillars Highlight Pills */}
@@ -214,7 +214,7 @@ export default function AboutHero() {
             <div className="relative w-full h-[70vh] rounded-2xl overflow-hidden bg-slate-950 flex items-center justify-center">
               <Image
                 src="/images/about-hero-kids.jpg"
-                alt="ASAPL International primary school students cultural performance in Sector 55 Noida"
+                alt="ASPAL International primary school students cultural performance in Sector 55 Noida"
                 fill
                 className="object-contain"
                 priority
@@ -224,7 +224,7 @@ export default function AboutHero() {
 
             <div className="p-4 text-center">
               <h4 className="font-heading text-lg font-bold text-white">
-                Cultural Day Performance • ASAPL International
+                Cultural Day Performance • ASPAL International
               </h4>
               <p className="text-xs text-slate-300 mt-1">
                 Celebrating theatrical expression, Indian heritage, and stage poise at our Sector 55, Noida campus.

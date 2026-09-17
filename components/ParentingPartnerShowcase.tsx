@@ -16,7 +16,7 @@ export default function ParentingPartnerShowcase() {
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <Image
           src="/images/happy-parenting-family.jpg"
-          alt="Indian parents walking joyfully hand-in-hand with their primary school daughter at ASAPL International campus in Sector 55 Noida"
+          alt="Indian parents walking joyfully hand-in-hand with their primary school daughter at ASPAL International campus in Sector 55 Noida"
           fill
           priority
           sizes="100vw"
@@ -63,7 +63,7 @@ export default function ParentingPartnerShowcase() {
           </h2>
 
           <p className="mt-5 text-base sm:text-xl text-slate-700 font-medium max-w-2xl mx-auto leading-relaxed">
-            At ASAPL International, teachers and parents work hand-in-hand to nurture confident, happy, and resilient young learners. Experience our warm, supportive campus in Sector 55, Noida.
+            At ASPAL International, teachers and parents work hand-in-hand to nurture confident, happy, and resilient young learners. Experience our warm, supportive campus in Sector 55, Noida.
           </p>
 
           {/* Action CTA Buttons */}
@@ -134,7 +134,7 @@ export default function ParentingPartnerShowcase() {
 
             <div className="p-4 text-center">
               <h4 className="font-heading text-lg font-bold text-white">
-                Happy Parenting & Family Partnership • ASAPL International
+                Happy Parenting & Family Partnership • ASPAL International
               </h4>
               <p className="text-xs text-slate-300 mt-1">
                 Sector 55, Noida — Building trust, nurturing curiosity, and working together with parents for every child’s success.
