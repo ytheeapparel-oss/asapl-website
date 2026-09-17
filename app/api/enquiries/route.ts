@@ -37,7 +37,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('enquiries')
       .insert([
         {
@@ -53,8 +53,7 @@ export async function POST(request: Request) {
           message: message?.trim() || null,
           status: 'new',
         },
-      ])
-      .select();
+      ]);
 
     if (error) {
       console.error('Supabase error inserting enquiry:', error);
@@ -64,7 +63,7 @@ export async function POST(request: Request) {
       );
     }
 
-    return NextResponse.json({ success: true, data });
+    return NextResponse.json({ success: true, message: 'Enquiry submitted successfully' });
   } catch (err: unknown) {
     console.error('Unexpected error handling enquiry:', err);
     const message = err instanceof Error ? err.message : 'Internal server error';
