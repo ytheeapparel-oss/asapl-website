@@ -445,3 +445,56 @@ export const FAQ_DATA: FAQItem[] = [
     category: "admissions",
   },
 ];
+
+export interface AdmissionPortal {
+  name: string;
+  badge: string;
+  tagline: string;
+  url: string;
+  category: string;
+}
+
+export const DELHI_NCR_ADMISSION_PORTALS: AdmissionPortal[] = [
+  {
+    name: "UniApply",
+    badge: "Delhi-NCR #1",
+    tagline: "Explore Nursery & Primary School Admissions",
+    url: "https://www.uniapply.com/delhi-ncr/schools-in-noida/",
+    category: "Delhi-NCR Admission Portal",
+  },
+  {
+    name: "Edustoke",
+    badge: "Verified Partner",
+    tagline: "Top Pre-Schools & Daycares in Noida",
+    url: "https://www.edustoke.com/noida/playschools",
+    category: "School Aggregator",
+  },
+  {
+    name: "SchoolMyKids",
+    badge: "Ratings & Reviews",
+    tagline: "Noida Primary Schools Directory & Reviews",
+    url: "https://www.schoolmykids.com/schools/noida",
+    category: "School Directory",
+  },
+  {
+    name: "Ezyschooling",
+    badge: "Admissions 2025–26",
+    tagline: "Nursery Admissions & Application Forms",
+    url: "https://ezyschooling.com/admissions/school/noida",
+    category: "Admission Portal",
+  },
+  {
+    name: "Justdial Noida",
+    badge: "Verified Local",
+    tagline: "Play Schools & Primary Schools in Sector 55",
+    url: "https://www.justdial.com/Noida/Play-Schools-in-Sector-55/nct-10375990",
+    category: "Local Discovery",
+  },
+  {
+    name: "Sulekha Education",
+    badge: "Direct Helpline",
+    tagline: "Find Best Schools in Noida Sector 55",
+    url: "https://www.sulekha.com/schools/noida",
+    category: "Parent Directory",
+  },
+];

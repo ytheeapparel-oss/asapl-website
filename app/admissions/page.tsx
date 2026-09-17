@@ -15,7 +15,8 @@ import {
   ShieldCheck, 
   ArrowRight, 
   Info, 
-  Check 
+  Check,
+  ExternalLink 
 } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -23,7 +24,7 @@ import AdmissionForm from "@/components/AdmissionForm";
 import AgeCalculator from "@/components/AgeCalculator";
 import FAQAccordion from "@/components/FAQAccordion";
 import AdmissionsTourShowcase from "@/components/AdmissionsTourShowcase";
-import { SCHOOL_DATA, FAQ_DATA } from "@/data/school-data";
+import { SCHOOL_DATA, FAQ_DATA, DELHI_NCR_ADMISSION_PORTALS } from "@/data/school-data";
 
 export const metadata: Metadata = {
   title: "Nursery & Primary School Admissions 2025–26 | Sector 55 Noida | ASAPL International",
@@ -368,7 +369,53 @@ export default function AdmissionsPage() {
           <AdmissionForm />
         </section>
 
-        {/* 6. ADMISSION FREQUENTLY ASKED QUESTIONS */}
+        {/* 6. DELHI-NCR SCHOOL ADMISSION SEARCH PORTALS */}
+        <section className="py-16 lg:py-20 border-t border-slate-200/60">
+          <SectionHeading
+            badge="Find Us Online"
+            badgeColor="ocean"
+            title="Listed on Delhi-NCR School Search Portals"
+            highlightWord="Search Portals"
+            highlightColor="text-ocean-600"
+            subtitle="Explore our verified school profiles, curriculum details, and reviews across premier school search platforms."
+          />
+
+          <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {DELHI_NCR_ADMISSION_PORTALS.map((portal, idx) => (
+              <a
+                key={idx}
+                href={portal.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-6 rounded-3xl bg-white border-2 border-slate-100 hover:border-ocean-300 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group transform hover:-translate-y-1"
+              >
+                <div>
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-xs font-bold px-3 py-1 rounded-full bg-ocean-50 text-ocean-700 border border-ocean-200">
+                      {portal.badge}
+                    </span>
+                    <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-ocean-600 transition-colors" />
+                  </div>
+                  <h3 className="font-heading text-lg font-bold text-slate-900 group-hover:text-ocean-600 transition-colors">
+                    {portal.name}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                    {portal.tagline}
+                  </p>
+                </div>
+
+                <div className="mt-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs font-bold text-ocean-600">
+                  <span>{portal.category}</span>
+                  <span className="flex items-center group-hover:translate-x-1 transition-transform">
+                    View Portal →
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+
+        {/* 7. ADMISSION FREQUENTLY ASKED QUESTIONS */}
         <section className="py-20 lg:py-28 border-t border-slate-200/60">
           <SectionHeading
             badge="Got Questions?"
