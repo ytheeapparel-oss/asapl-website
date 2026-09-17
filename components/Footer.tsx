@@ -11,7 +11,8 @@ import {
   Instagram,
   Facebook,
   Youtube,
-  Clock
+  Clock,
+  Lock
 } from "lucide-react";
 import { SCHOOL_DATA } from "@/data/school-data";
 
@@ -280,6 +281,15 @@ export default function Footer() {
             <Link href="/contact-us" className="hover:text-slate-300">Child Safeguarding Policy</Link>
             <span>•</span>
             <Link href="/contact-us" className="hover:text-slate-300">Terms of Enrolment</Link>
+            <span>•</span>
+            <Link 
+              href="/admin" 
+              className="hover:text-sunshine-400 inline-flex items-center space-x-1 transition-colors text-slate-400 hover:underline"
+              title="School Administration & Enquiries Portal"
+            >
+              <Lock className="w-3 h-3 text-slate-400" />
+              <span>Staff / Admin</span>
+            </Link>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-3">
