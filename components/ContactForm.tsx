@@ -17,6 +17,7 @@ export default function ContactForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const validate = () => {
     const err: Record<string, string> = {};
@@ -30,16 +31,46 @@ export default function ContactForm() {
     return Object.keys(err).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (formData.honeypot) return;
     if (!validate()) return;
 
     setIsSubmitting(true);
-    setTimeout(() => {
-      setIsSubmitting(false);
+    setSubmitError(null);
+
+    try {
+      const response = await fetch("/api/enquiries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "contact",
+          name: formData.name,
+          phone: formData.phone,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          honeypot: formData.honeypot,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || "Failed to send message. Please try again.");
+      }
+
       setIsSuccess(true);
-    }, 1000);
+    } catch (err: unknown) {
+      console.error("Contact submission error:", err);
+      setSubmitError(
+        err instanceof Error
+          ? err.message
+          : "An unexpected error occurred. Please call us directly at " + SCHOOL_DATA.displayPhone
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -60,6 +91,7 @@ export default function ContactForm() {
           <button
             onClick={() => {
               setIsSuccess(false);
+              setSubmitError(null);
               setFormData({
                 name: "",
                 phone: "",
@@ -185,6 +217,13 @@ export default function ContactForm() {
               className="w-full p-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-ocean-500 focus:ring-2 focus:ring-ocean-100"
             ></textarea>
           </div>
+
+          {submitError && (
+            <div className="p-3.5 rounded-xl bg-red-50 border border-red-200 text-xs text-red-700 flex items-start space-x-2">
+              <AlertCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+              <span>{submitError}</span>
+            </div>
+          )}
 
           <button
             type="submit"

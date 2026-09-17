@@ -33,6 +33,7 @@ export default function AdmissionForm() {
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const gradeOptions = [
     "Playgroup / Toddlers (Ages 2 – 3)",
@@ -79,7 +80,7 @@ export default function AdmissionForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Spam honeypot trap
@@ -93,12 +94,43 @@ export default function AdmissionForm() {
     }
 
     setIsSubmitting(true);
+    setSubmitError(null);
 
-    // Simulate reliable submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/enquiries", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          type: "admission",
+          name: formData.parentName,
+          phone: formData.phone,
+          email: formData.email,
+          child_name: formData.childName,
+          child_age: formData.childAge,
+          grade: formData.grade,
+          visit_date: formData.visitDate,
+          message: formData.message,
+          honeypot: formData.honeypot,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok || !result.success) {
+        throw new Error(result.error || "Failed to submit enquiry. Please try again.");
+      }
+
       setIsSuccess(true);
-    }, 1200);
+    } catch (err: unknown) {
+      console.error("Admission submission error:", err);
+      setSubmitError(
+        err instanceof Error
+          ? err.message
+          : "An unexpected error occurred. Please call admissions directly at " + SCHOOL_DATA.displayPhone
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const resetForm = () => {
@@ -114,6 +146,7 @@ export default function AdmissionForm() {
       privacyConsent: true,
       honeypot: "",
     });
+    setSubmitError(null);
     setIsSuccess(false);
   };
 
@@ -414,6 +447,12 @@ export default function AdmissionForm() {
 
           {/* Submit Button */}
           <div>
+            {submitError && (
+              <div className="mb-3 p-3.5 rounded-xl bg-red-50 border border-red-200 text-xs text-red-700 flex items-start space-x-2">
+                <AlertCircle className="w-4 h-4 text-red-500 shrink-0 mt-0.5" />
+                <span>{submitError}</span>
+              </div>
+            )}
             <button
               type="submit"
               disabled={isSubmitting}
