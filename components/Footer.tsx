@@ -11,10 +11,9 @@ import {
   Instagram,
   Facebook,
   Youtube,
-  Clock,
-  ExternalLink
+  Clock
 } from "lucide-react";
-import { SCHOOL_DATA, DELHI_NCR_ADMISSION_PORTALS } from "@/data/school-data";
+import { SCHOOL_DATA } from "@/data/school-data";
 
 export default function Footer() {
   return (
@@ -269,51 +268,6 @@ export default function Footer() {
             </div>
           </div>
 
-        </div>
-
-        {/* Delhi NCR School Admission Portals Directory Showcase */}
-        <div className="py-8 border-b border-slate-800/80">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-3 mb-5">
-            <div>
-              <span className="text-[11px] font-bold uppercase tracking-widest text-sunshine-400 block mb-1">
-                Verified Delhi-NCR Admission Search Platforms
-              </span>
-              <h4 className="font-heading text-sm sm:text-base font-bold text-white">
-                Find ASAPL International on Leading School Discovery Portals
-              </h4>
-            </div>
-            <span className="text-xs text-slate-400">
-              Primary & Pre-School Admissions 2025–26
-            </span>
-          </div>
-
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-            {DELHI_NCR_ADMISSION_PORTALS.map((portal, idx) => (
-              <a
-                key={idx}
-                href={portal.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-2xl bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 hover:border-slate-600 transition-all group flex flex-col justify-between"
-                title={`Find ASAPL International on ${portal.name}`}
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-700/70 text-sunshine-300">
-                      {portal.badge}
-                    </span>
-                    <ExternalLink className="w-3 h-3 text-slate-500 group-hover:text-sunshine-400 transition-colors" />
-                  </div>
-                  <span className="font-bold text-xs text-white group-hover:text-sunshine-300 transition-colors block">
-                    {portal.name}
-                  </span>
-                </div>
-                <span className="text-[10px] text-slate-400 mt-2 line-clamp-1">
-                  {portal.category}
-                </span>
-              </a>
-            ))}
-          </div>
         </div>
 
         {/* Bottom Bar */}
