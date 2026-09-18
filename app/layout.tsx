@@ -111,6 +111,10 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "cf857e5ed6f9e189",
+    yandex: process.env.YANDEX_VERIFICATION,
+    other: {
+      ...(process.env.BING_VERIFICATION ? { "msvalidate.01": process.env.BING_VERIFICATION } : {}),
+    },
   },
 };
 
