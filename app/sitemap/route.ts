@@ -10,7 +10,7 @@ ${items
   .map(
     (item) => `  <url>
     <loc>${item.url}</loc>
-    ${item.lastModified ? `<lastmod>${new Date(item.lastModified).toISOString()}</lastmod>` : ""}
+    ${item.lastModified ? `<lastmod>${typeof item.lastModified === "string" ? item.lastModified : new Date(item.lastModified).toISOString().split("T")[0]}</lastmod>` : ""}
     ${item.changeFrequency ? `<changefreq>${item.changeFrequency}</changefreq>` : ""}
     ${item.priority !== undefined ? `<priority>${item.priority}</priority>` : ""}
   </url>`
