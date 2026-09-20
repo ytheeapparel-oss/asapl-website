@@ -36,33 +36,68 @@ export const metadata: Metadata = {
   description:
     "ASPAL International (Aspal Juniors) is a top-ranked play school and primary school in Sector 55, Noida. Experiential learning, 42+ synthetic phonics, concrete math, and 100% CCTV child-safe campus. Admissions open 2025–26 for Sectors 55, 56, 62, 12, 22.",
   keywords: [
-    // Core Sector 55 Rankings
+    // 1. Hyper-Local Sector 55 & Surrounding Sectors (Central Noida)
     "best school in sector 55 noida",
     "play school in sector 55 noida",
     "pre school in sector 55 noida",
     "primary school in sector 55 noida",
     "nursery admission in sector 55 noida",
-    "kids school sector 55 noida",
     "kindergarten in sector 55 noida",
-    // Surrounding Noida Sectors
+    "kids school sector 55 noida",
     "play school near sector 56 noida",
     "best primary school near sector 62 noida",
     "nursery admission sector 12 noida",
     "play school in sector 22 noida",
     "schools near sector 53 noida",
     "pre school near sector 57 noida",
-    // City-Wide Noida High Intent
+    "schools near sector 34 noida",
+    "best preschool in central noida",
+
+    // 2. City-Wide High-Volume Intent
+    "best primary school in noida",
+    "top 10 primary schools in noida",
     "best play school in noida",
     "top 10 play schools in noida",
-    "best primary schools in noida",
-    "nursery school admission in noida 2025-26",
+    "best preschool in noida",
+    "top rated play school in noida",
+    "nursery admission in noida",
+    "pre nursery admission noida",
+    "primary school admission in noida 2025-26",
+    "primary school admission in noida 2026-27",
+    "best kindergarten school in noida",
+    "international primary school in noida",
+    "cbse primary school in noida",
+
+    // 3. Parent Decision Factors (Safety, Curriculum, Fees)
     "play school with cctv in noida",
+    "child safe play school in noida",
+    "affordable primary school in noida",
+    "primary school in noida with fee structure",
     "experiential learning primary school noida",
     "synthetic phonics classes for kids noida",
-    // Brand & Variations
+    "concrete mathematics preschool noida",
+    "play school with transport facility noida",
+    "preschool with daycare in noida",
+    "activity based learning school in noida",
+    "school with low student teacher ratio noida",
+    "caring teachers play school noida",
+
+    // 4. Grade & Age Specific
+    "playgroup admission in noida",
+    "nursery school near me noida",
+    "lkg admission in noida",
+    "ukg admission in noida",
+    "class 1 admission in noida",
+    "school admission for 3 year old in noida",
+    "preschool admission age criteria noida",
+
+    // 5. Brand, Authority & Local Entity
     "ASPAL International",
     "Aspal Juniors",
     "ASPAL International School Noida",
+    "ASPAL International Sector 55 Noida",
+    "aspal school admission noida",
+    "aspal juniors play school sector 55",
   ],
   authors: [{ name: "ASPAL International School" }],
   creator: "ASPAL International",
@@ -125,9 +160,9 @@ export default function RootLayout({
 }>) {
   const schoolSchema = {
     "@context": "https://schema.org",
-    "@type": "School",
+    "@type": ["School", "EducationalOrganization", "LocalBusiness"],
     name: SCHOOL_DATA.name,
-    alternateName: ["Aspal Juniors", SCHOOL_DATA.shortName],
+    alternateName: ["Aspal Juniors", SCHOOL_DATA.shortName, "ASPAL International Sector 55 Noida"],
     description: SCHOOL_DATA.subTagline,
     url: "https://www.aspal.co.in",
     image: "https://www.aspal.co.in/images/hero-indian-kids.jpg",
@@ -146,6 +181,36 @@ export default function RootLayout({
       latitude: "28.5993",
       longitude: "77.3517",
     },
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "Sector 55, Noida" },
+      { "@type": "AdministrativeArea", name: "Sector 56, Noida" },
+      { "@type": "AdministrativeArea", name: "Sector 62, Noida" },
+      { "@type": "AdministrativeArea", name: "Sector 12, Noida" },
+      { "@type": "AdministrativeArea", name: "Sector 22, Noida" },
+      { "@type": "AdministrativeArea", name: "Sector 53, Noida" },
+      { "@type": "AdministrativeArea", name: "Sector 57, Noida" },
+      { "@type": "AdministrativeArea", name: "Sector 34, Noida" },
+      { "@type": "City", name: "Noida" },
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Early Childhood & Primary Programs",
+      itemListElement: [
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Playgroup & Toddler Program (Age 2-3)" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Nursery Program (Age 3-4)" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Kindergarten LKG & UKG (Age 4-6)" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Primary School Grade 1 to 5" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Synthetic Phonics 42+ Sounds Lab" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Concrete CPA Mathematics" } },
+      ],
+    },
+    amenityFeature: [
+      { "@type": "LocationFeatureSpecification", name: "100% CCTV Monitored Child-Safe Campus", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Air-Conditioned Thematic Classrooms", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Outdoor Sandpit & Play Turf", value: true },
+      { "@type": "LocationFeatureSpecification", name: "GPS-Enabled School Transport", value: true },
+      { "@type": "LocationFeatureSpecification", name: "Low Student-Teacher Ratio (1:12)", value: true },
+    ],
     sameAs: [
       SCHOOL_DATA.socialLinks.youtube,
       SCHOOL_DATA.socialLinks.instagram,

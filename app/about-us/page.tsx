@@ -27,9 +27,22 @@ import AboutWarmEnvironment from "@/components/AboutWarmEnvironment";
 import { SCHOOL_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "About Us | ASPAL International Primary School Noida",
+  title: "About Us | Top Rated Primary & Play School in Sector 55 Noida | ASPAL",
   description:
-    "Discover the philosophy, caring educators, and child-safe campus of ASPAL International in Sector 55, Noida. Cultivating confident learners through happy, experiential education.",
+    "Discover why ASPAL International is a top-ranked primary school and play school in Sector 55, Noida. 100% CCTV child-safe campus, 1:12 low student-teacher ratio, caring educators, and experiential foundational learning.",
+  keywords: [
+    "best school in sector 55 noida",
+    "top 10 primary schools in noida",
+    "best primary school in noida",
+    "top 10 play schools in noida",
+    "play school with cctv in noida",
+    "child safe play school in noida",
+    "school with low student teacher ratio noida",
+    "caring teachers play school noida",
+    "experiential learning primary school noida",
+    "best preschool in central noida",
+    "aspal international school noida",
+  ],
 };
 
 export default function AboutUsPage() {

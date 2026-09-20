@@ -440,6 +440,16 @@ export const FAQ_DATA: FAQItem[] = [
     category: "campus",
   },
   {
+    question: "What makes ASPAL International the best play school and primary school in Sector 55, Noida?",
+    answer: "ASPAL International is recognized as a top primary and play school in Sector 55, Noida due to our 100% CCTV-monitored child-safe campus, 1:12 low student-teacher ratio, certified 42+ Synthetic Phonics lab, concrete CPA math curriculum, and joyful, pressure-free learning environment.",
+    category: "curriculum",
+  },
+  {
+    question: "Which sectors in Noida are covered by your school transport and van facility?",
+    answer: "Our GPS-tracked, verified school transport service covers families living in Sector 55, Sector 56, Sector 62, Sector 12, Sector 22, Sector 51, Sector 50, Sector 34, Sector 53, and Sector 57 Noida.",
+    category: "campus",
+  },
+  {
     question: "What documents are required for admission enrolment?",
     answer: "Standard required documents include the child's birth certificate, 4 passport-size photographs, proof of residence in Noida/NCR, immunization record card, and previous school report card/transfer certificate (for Grade 1 and above).",
     category: "admissions",

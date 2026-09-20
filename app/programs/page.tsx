@@ -22,16 +22,24 @@ import ProgramShowcase from "@/components/ProgramShowcase";
 import { PROGRAMS_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "Play School & Primary Programs | Phonics & STEM in Sector 55 Noida | ASPAL",
+  title: "Playgroup, Nursery, Kindergarten & Primary Programs in Noida | ASPAL",
   description:
-    "Explore colorful early childhood and primary school programs at ASPAL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, Kindergarten, 42+ Synthetic Phonics, Concrete Math CPA, Fine Arts, and Kids Yoga.",
+    "Explore early childhood and primary school programs at ASPAL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, LKG, UKG, Class 1-5, 42+ Synthetic Phonics Lab, Concrete Math CPA, STEM, Fine Arts, and Kids Yoga.",
   keywords: [
     "play school in sector 55 noida",
+    "kindergarten in sector 55 noida",
     "pre school curriculum noida",
-    "kindergarten learning program noida",
-    "synthetic phonics classes noida",
-    "concrete mathematics school noida",
+    "synthetic phonics classes for kids noida",
+    "concrete mathematics preschool noida",
+    "activity based learning school in noida",
+    "experiential learning primary school noida",
+    "best primary school in noida",
+    "playgroup admission in noida",
+    "lkg admission in noida",
+    "ukg admission in noida",
+    "class 1 admission in noida",
     "early childhood education sector 55 noida",
+    "holistic development primary school noida",
   ],
 };
 

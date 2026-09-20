@@ -26,17 +26,28 @@ import AdmissionsTourShowcase from "@/components/AdmissionsTourShowcase";
 import { SCHOOL_DATA, FAQ_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "Nursery & Primary School Admissions 2025–26 | Sector 55 Noida | ASPAL International",
+  title: "Nursery & Primary School Admissions 2025–26 & 2026-27 | Sector 55 Noida | ASPAL",
   description:
-    "Admissions open for 2025-26 at ASPAL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, LKG, UKG & Primary school admissions. Transparent process, age eligibility criteria, campus visits, and online application form.",
+    "Admissions open for 2025-26 & 2026-27 at ASPAL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, LKG, UKG & Primary school admissions. Transparent fee structure, age eligibility criteria, campus visits, and online application form.",
   keywords: [
+    "nursery admission in noida",
     "nursery admission in noida 2025-26",
-    "school admission sector 55 noida",
-    "pre school admission noida",
-    "primary school admission criteria noida",
+    "primary school admission in noida 2026-27",
+    "play school in sector 55 noida",
+    "nursery admission in sector 55 noida",
+    "playgroup admission in noida",
+    "lkg admission in noida",
+    "ukg admission in noida",
+    "class 1 admission in noida",
+    "primary school in noida with fee structure",
+    "affordable primary school in noida",
+    "preschool admission age criteria noida",
     "play school admission near sector 56 noida",
-    "kindergarten admissions sector 62 noida",
-    "nursery admission form noida",
+    "best primary school near sector 62 noida",
+    "nursery admission sector 12 noida",
+    "play school in sector 22 noida",
+    "school admission for 3 year old in noida",
+    "aspal school admission noida",
   ],
 };
 

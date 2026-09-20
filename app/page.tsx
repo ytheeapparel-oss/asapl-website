@@ -66,8 +66,25 @@ export default function HomePage() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: FAQ_DATA.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+
   return (
     <div className="flex flex-col w-full bg-cream">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       
       {/* 1. HERO SECTION WITH ANIMATED LOOPING VIDEO */}
       <HeroVideo />
@@ -167,6 +184,13 @@ export default function HomePage() {
               >
                 <span>View Admissions →</span>
               </Link>
+            </div>
+
+            {/* Hyper-Local Proximity Indicator */}
+            <div className="pt-2">
+              <p className="text-xs text-slate-500 font-medium">
+                📍 Recognized as a premier primary & play school in Sector 55, Noida • Welcoming families from <span className="font-bold text-slate-700">Sector 56, Sector 62, Sector 12, Sector 22 & Central Noida</span>.
+              </p>
             </div>
 
           </div>

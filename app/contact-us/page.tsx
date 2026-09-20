@@ -22,9 +22,23 @@ import ContactVisitShowcase from "@/components/ContactVisitShowcase";
 import { SCHOOL_DATA } from "@/data/school-data";
 
 export const metadata: Metadata = {
-  title: "Contact Us & Campus Tour | ASPAL International Sector 55 Noida",
+  title: "Contact & Campus Visit | School in Sector 55 Noida Near Sector 56, 62, 12, 22",
   description:
-    "Contact ASPAL International primary school in Sector 55, Noida. Phone: +91 9873539445, Email: Rakeshpandey2001@gmail.com. Schedule a campus visit or submit an inquiry.",
+    "Contact ASPAL International primary and play school in Sector 55, Noida. Easily accessible from Sector 56, Sector 62, Sector 12, Sector 22, Sector 53, and Sector 57. Safe GPS transport available. Call +91 9873539445 or schedule a campus tour.",
+  keywords: [
+    "primary school in sector 55 noida",
+    "play school in sector 55 noida",
+    "play school near sector 56 noida",
+    "best primary school near sector 62 noida",
+    "nursery admission sector 12 noida",
+    "play school in sector 22 noida",
+    "pre school near sector 53 noida",
+    "play school near sector 57 noida",
+    "schools near sector 34 noida",
+    "play school with transport facility noida",
+    "nursery school near me noida",
+    "aspal international sector 55 noida",
+  ],
 };
 
 export default function ContactUsPage() {
