@@ -13,6 +13,18 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      {
+        source: "/sitemap",
+        destination: "/sitemap.xml",
+      },
+      {
+        source: "/sitemap_index.xml",
+        destination: "/sitemap.xml",
+      },
+    ];
+  },
 };
 
 export default nextConfig;
