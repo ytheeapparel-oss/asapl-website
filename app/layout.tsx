@@ -29,6 +29,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.aspal.co.in"),
+  alternates: {
+    canonical: "./",
+  },
   title: {
     default: "ASPAL International | Best Play School & Primary School in Sector 55, Noida",
     template: "%s | ASPAL International School Noida",
