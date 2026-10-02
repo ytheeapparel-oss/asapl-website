@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   description:
     "Contact ASPAL International primary and play school in Sector 55, Noida. Easily accessible from Sector 56, Sector 62, Sector 12, Sector 22, Sector 53, and Sector 57. Safe GPS transport available. Call +91 9873539445 or schedule a campus tour.",
   keywords: [
+    "kids school near me noida",
+    "kids school in noida",
+    "kids school sector 55 noida",
+    "kids school near sector 56 noida",
     "primary school in sector 55 noida",
     "play school in sector 55 noida",
     "play school near sector 56 noida",

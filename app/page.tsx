@@ -189,7 +189,7 @@ export default function HomePage() {
             {/* Hyper-Local Proximity Indicator */}
             <div className="pt-2">
               <p className="text-xs text-slate-500 font-medium">
-                📍 Recognized as a premier primary & play school in Sector 55, Noida • Welcoming families from <span className="font-bold text-slate-700">Sector 56, Sector 62, Sector 12, Sector 22 & Central Noida</span>.
+                📍 Recognized as a premier kids school, play school & primary school in Sector 55, Noida • Welcoming families from <span className="font-bold text-slate-700">Sector 56, Sector 62, Sector 12, Sector 22 & Central Noida</span>.
               </p>
             </div>
 

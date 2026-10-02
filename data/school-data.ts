@@ -440,8 +440,8 @@ export const FAQ_DATA: FAQItem[] = [
     category: "campus",
   },
   {
-    question: "What makes ASPAL International the best play school and primary school in Sector 55, Noida?",
-    answer: "ASPAL International is recognized as a top primary and play school in Sector 55, Noida due to our 100% CCTV-monitored child-safe campus, 1:12 low student-teacher ratio, certified 42+ Synthetic Phonics lab, concrete CPA math curriculum, and joyful, pressure-free learning environment.",
+    question: "Why is ASPAL International considered the best kids school and play school in Sector 55, Noida?",
+    answer: "ASPAL International is trusted as a top kids school and primary school in Sector 55, Noida due to our 100% CCTV-monitored child-safe campus, 1:12 low student-teacher ratio, certified 42+ Synthetic Phonics lab, concrete CPA math curriculum, and joyful, activity-based learning environment for young learners.",
     category: "curriculum",
   },
   {

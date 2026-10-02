@@ -33,20 +33,37 @@ export const metadata: Metadata = {
     canonical: "./",
   },
   title: {
-    default: "ASPAL International | Best Play School & Primary School in Sector 55, Noida",
+    default: "ASPAL International | Best Kids School, Play School & Primary School in Sector 55, Noida",
     template: "%s | ASPAL International School Noida",
   },
   description:
-    "ASPAL International (Aspal Juniors) is a top-ranked play school and primary school in Sector 55, Noida. Experiential learning, 42+ synthetic phonics, concrete math, and 100% CCTV child-safe campus. Admissions open 2025–26 for Sectors 55, 56, 62, 12, 22.",
+    "ASPAL International (Aspal Juniors) is a top-ranked kids school, play school, and primary school in Sector 55, Noida. Experiential learning, 42+ synthetic phonics, concrete math, and 100% CCTV child-safe campus. Admissions open for Sectors 55, 56, 62, 12, 22.",
   keywords: [
-    // 1. Hyper-Local Sector 55 & Surrounding Sectors (Central Noida)
+    // 1. "Kids School in Noida" Core Variations
+    "kids school in noida",
+    "best kids school in noida",
+    "top kids school in noida",
+    "kids school near me noida",
+    "kids play school in noida",
+    "kids primary school in noida",
+    "kids school sector 55 noida",
+    "kids school near sector 56 noida",
+    "kids school near sector 62 noida",
+    "kids school in sector 12 noida",
+    "kids school in sector 22 noida",
+    "kids school admission in noida",
+    "affordable kids school in noida",
+    "safe kids school with cctv in noida",
+    "little kids school noida",
+    "small kids school in noida",
+
+    // 2. Hyper-Local Sector 55 & Surrounding Sectors (Central Noida)
     "best school in sector 55 noida",
     "play school in sector 55 noida",
     "pre school in sector 55 noida",
     "primary school in sector 55 noida",
     "nursery admission in sector 55 noida",
     "kindergarten in sector 55 noida",
-    "kids school sector 55 noida",
     "play school near sector 56 noida",
     "best primary school near sector 62 noida",
     "nursery admission sector 12 noida",
@@ -56,7 +73,7 @@ export const metadata: Metadata = {
     "schools near sector 34 noida",
     "best preschool in central noida",
 
-    // 2. City-Wide High-Volume Intent
+    // 3. City-Wide High-Volume Intent
     "best primary school in noida",
     "top 10 primary schools in noida",
     "best play school in noida",
@@ -71,7 +88,7 @@ export const metadata: Metadata = {
     "international primary school in noida",
     "cbse primary school in noida",
 
-    // 3. Parent Decision Factors (Safety, Curriculum, Fees)
+    // 4. Parent Decision Factors (Safety, Curriculum, Fees)
     "play school with cctv in noida",
     "child safe play school in noida",
     "affordable primary school in noida",
@@ -85,7 +102,7 @@ export const metadata: Metadata = {
     "school with low student teacher ratio noida",
     "caring teachers play school noida",
 
-    // 4. Grade & Age Specific
+    // 5. Grade & Age Specific
     "playgroup admission in noida",
     "nursery school near me noida",
     "lkg admission in noida",
@@ -94,7 +111,7 @@ export const metadata: Metadata = {
     "school admission for 3 year old in noida",
     "preschool admission age criteria noida",
 
-    // 5. Brand, Authority & Local Entity
+    // 6. Brand, Authority & Local Entity
     "ASPAL International",
     "Aspal Juniors",
     "ASPAL International School Noida",
@@ -165,7 +182,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": ["School", "EducationalOrganization", "LocalBusiness"],
     name: SCHOOL_DATA.name,
-    alternateName: ["Aspal Juniors", SCHOOL_DATA.shortName, "ASPAL International Sector 55 Noida"],
+    alternateName: ["Aspal Juniors", SCHOOL_DATA.shortName, "ASPAL International Sector 55 Noida", "Kids School Sector 55 Noida"],
     description: SCHOOL_DATA.subTagline,
     url: "https://www.aspal.co.in",
     image: "https://www.aspal.co.in/images/hero-indian-kids.jpg",
@@ -197,12 +214,12 @@ export default function RootLayout({
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Early Childhood & Primary Programs",
+      name: "Kids School, Early Childhood & Primary Programs",
       itemListElement: [
-        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Playgroup & Toddler Program (Age 2-3)" } },
-        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Nursery Program (Age 3-4)" } },
-        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Kindergarten LKG & UKG (Age 4-6)" } },
-        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Primary School Grade 1 to 5" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Kids Play School & Toddler Program (Age 2-3)" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Kids Nursery School Program (Age 3-4)" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Kids Kindergarten LKG & UKG (Age 4-6)" } },
+        { "@type": "Offer", itemOffered: { "@type": "Course", name: "Kids Primary School Grade 1 to 5" } },
         { "@type": "Offer", itemOffered: { "@type": "Course", name: "Synthetic Phonics 42+ Sounds Lab" } },
         { "@type": "Offer", itemOffered: { "@type": "Course", name: "Concrete CPA Mathematics" } },
       ],

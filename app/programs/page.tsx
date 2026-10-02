@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   description:
     "Explore early childhood and primary school programs at ASPAL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, LKG, UKG, Class 1-5, 42+ Synthetic Phonics Lab, Concrete Math CPA, STEM, Fine Arts, and Kids Yoga.",
   keywords: [
+    "kids play school in noida",
+    "kids primary school in noida",
+    "kids school in noida",
     "play school in sector 55 noida",
     "kindergarten in sector 55 noida",
     "pre school curriculum noida",

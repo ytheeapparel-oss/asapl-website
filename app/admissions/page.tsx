@@ -30,6 +30,10 @@ export const metadata: Metadata = {
   description:
     "Admissions open for 2025-26 & 2026-27 at ASPAL International (Aspal Juniors), Sector 55, Noida. Playgroup, Nursery, LKG, UKG & Primary school admissions. Transparent fee structure, age eligibility criteria, campus visits, and online application form.",
   keywords: [
+    "kids school admission in noida",
+    "kids school in noida",
+    "best kids school in noida",
+    "kids school sector 55 noida",
     "nursery admission in noida",
     "nursery admission in noida 2025-26",
     "primary school admission in noida 2026-27",
@@ -40,7 +44,7 @@ export const metadata: Metadata = {
     "ukg admission in noida",
     "class 1 admission in noida",
     "primary school in noida with fee structure",
-    "affordable primary school in noida",
+    "affordable kids school in noida",
     "preschool admission age criteria noida",
     "play school admission near sector 56 noida",
     "best primary school near sector 62 noida",

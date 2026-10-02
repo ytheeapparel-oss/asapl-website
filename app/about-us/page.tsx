@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   description:
     "Discover why ASPAL International is a top-ranked primary school and play school in Sector 55, Noida. 100% CCTV child-safe campus, 1:12 low student-teacher ratio, caring educators, and experiential foundational learning.",
   keywords: [
+    "best kids school in noida",
+    "kids school in noida",
+    "safe kids school with cctv in noida",
     "best school in sector 55 noida",
     "top 10 primary schools in noida",
     "best primary school in noida",
