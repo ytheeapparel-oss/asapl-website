@@ -3,6 +3,7 @@ const HOST = "www.aspal.co.in";
 
 const urls = [
   "https://www.aspal.co.in/",
+  "https://www.aspal.co.in/aspal-juniors",
   "https://www.aspal.co.in/about-us",
   "https://www.aspal.co.in/admissions",
   "https://www.aspal.co.in/programs",

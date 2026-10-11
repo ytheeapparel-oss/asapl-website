@@ -40,6 +40,7 @@ export default function Header() {
 
   const navLinks = [
     { label: "Home", href: "/" },
+    { label: "Aspal Juniors", href: "/aspal-juniors" },
     { label: "About Us", href: "/about-us" },
     { label: "Admissions", href: "/admissions" },
     { label: "Programs", href: "/programs" },
@@ -60,7 +61,7 @@ export default function Header() {
               ADMISSIONS OPEN 2025–26
             </span>
             <span className="hidden sm:inline text-white/95 font-semibold text-xs">
-              | Playgroup, Nursery, KG & Primary Grades 1–5 • Sector 55, Noida
+              | Aspal International (Sec 55) & Aspal Juniors (Sec 51 & 22) • Ages 2–12 • Noida
             </span>
           </div>
 
@@ -169,7 +170,7 @@ export default function Header() {
               </div>
               <span className="text-[11px] sm:text-xs font-semibold text-slate-500 tracking-wide flex items-center space-x-1">
                 <span className="text-mint-600 font-bold">●</span>
-                <span>Premier Early Childhood & Primary School (Ages 2.5–10) • Sector 55, Noida</span>
+                <span>Aspal International (Sec 55) & Aspal Juniors (Sec 51 & 22) • Ages 2–12 • Noida</span>
               </span>
             </div>
           </Link>

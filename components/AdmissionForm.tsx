@@ -21,7 +21,8 @@ export default function AdmissionForm() {
     parentName: "",
     childName: "",
     childAge: "",
-    grade: "Nursery",
+    campus: "Aspal International School (Sector 55 • Till Class 6)",
+    grade: "Nursery (Ages 3 – 4)",
     phone: "",
     email: "",
     visitDate: "",
@@ -35,8 +36,15 @@ export default function AdmissionForm() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
+  const campusOptions = [
+    "Aspal International School (Sector 55 • Till Class 6)",
+    "Aspal Juniors (Sector 51 • Pre-School, Daycare, Skating, Dance & Music)",
+    "Aspal Juniors (Sector 22 • Pre-School & Daycare)",
+  ];
+
   const gradeOptions = [
-    "Playgroup / Toddlers (Ages 2 – 3)",
+    "Toddlers / Playgroup (Ages 2 – 3)",
+    "Daycare & Full Creche (Ages 2 – 8)",
     "Nursery (Ages 3 – 4)",
     "Lower KG / LKG (Ages 4 – 5)",
     "Upper KG / UKG (Ages 5 – 6)",
@@ -44,7 +52,9 @@ export default function AdmissionForm() {
     "Grade 2 (Ages 7 – 8)",
     "Grade 3 (Ages 8 – 9)",
     "Grade 4 (Ages 9 – 10)",
-    "Grade 5 (Ages 10+)",
+    "Grade 5 (Ages 10 – 11)",
+    "Grade 6 / Class VI (Ages 11 – 12)",
+    "Dance, Music & Roller Skating Academy (Sec 51)",
   ];
 
   const validate = () => {
@@ -105,6 +115,7 @@ export default function AdmissionForm() {
           name: formData.parentName,
           phone: formData.phone,
           email: formData.email,
+          campus: formData.campus,
           child_name: formData.childName,
           child_age: formData.childAge,
           grade: formData.grade,
@@ -138,7 +149,8 @@ export default function AdmissionForm() {
       parentName: "",
       childName: "",
       childAge: "",
-      grade: "Nursery",
+      campus: "Aspal International School (Sector 55 • Till Class 6)",
+      grade: "Nursery (Ages 3 – 4)",
       phone: "",
       email: "",
       visitDate: "",
@@ -281,7 +293,34 @@ export default function AdmissionForm() {
             </div>
           </div>
 
-          {/* Row 2: Child Age & Grade Seeking */}
+          {/* Row 2: Preferred Campus Selection */}
+          <div>
+            <label htmlFor="campus" className="block text-xs font-bold text-slate-700 mb-1">
+              Select Preferred Campus / School <span className="text-coral-500">*</span>
+            </label>
+            <div className="relative">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-coral-500">
+                <Sparkles className="w-4 h-4" />
+              </div>
+              <select
+                id="campus"
+                value={formData.campus}
+                onChange={(e) => setFormData({ ...formData, campus: e.target.value })}
+                className="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold text-slate-900 focus:outline-none focus:border-ocean-500 focus:ring-2 focus:ring-ocean-100 bg-white"
+              >
+                {campusOptions.map((opt) => (
+                  <option key={opt} value={opt}>
+                    {opt}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <p className="text-[11px] text-slate-500 mt-1">
+              Choose from Sector 55 (Primary till Class 6), Sector 51 (Pre-school, Daycare, Skating, Dance/Music), or Sector 22 (Pre-school & Daycare).
+            </p>
+          </div>
+
+          {/* Row 3: Child Age & Grade Seeking */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
               <label htmlFor="childAge" className="block text-xs font-bold text-slate-700 mb-1">
@@ -309,7 +348,7 @@ export default function AdmissionForm() {
 
             <div>
               <label htmlFor="grade" className="block text-xs font-bold text-slate-700 mb-1">
-                Grade / Class Interested In <span className="text-coral-500">*</span>
+                Grade / Program Interested In <span className="text-coral-500">*</span>
               </label>
               <select
                 id="grade"

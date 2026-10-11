@@ -81,6 +81,168 @@ export const SCHOOL_DATA: SchoolInfo = {
   ],
 };
 
+export interface CampusInfo {
+  id: string;
+  name: string;
+  brand: "Aspal International School" | "Aspal Juniors";
+  tagline: string;
+  type: string;
+  ageGroup: string;
+  grades: string;
+  sector: string;
+  fullAddress: string;
+  promotedSectors: string[];
+  features: string[];
+  activities: string[];
+  phone: string;
+  displayPhone: string;
+  email: string;
+  badgeColor: string;
+  accentBg: string;
+  pageUrl: string;
+}
+
+export const CAMPUSES_DATA: CampusInfo[] = [
+  {
+    id: "aspal-international-55",
+    name: "Aspal International School",
+    brand: "Aspal International School",
+    tagline: "Premier Primary School till VIth Standard",
+    type: "Primary School till Class VI",
+    ageGroup: "2 Years – 12 Years",
+    grades: "Playgroup, Nursery, LKG, UKG, Grades 1 to 6",
+    sector: "Sector 55, Noida",
+    fullAddress: "Aspal International School, Sector 55, Noida, Uttar Pradesh 201301",
+    promotedSectors: [
+      "Sector 55",
+      "Sector 56",
+      "Sector 21",
+      "Sector 22",
+      "Sector 12",
+      "Sector 26",
+      "Sector 31",
+      "Sector 34",
+      "Sector 36",
+      "Sector 19",
+      "Rajat Vihar",
+      "Mayur Vihar Phase 3"
+    ],
+    features: [
+      "Classes up to VIth Standard (Primary & Upper Primary)",
+      "Certified Synthetic Phonics 42+ Sound Lab",
+      "Concrete-Pictorial-Abstract (CPA) Mathematics",
+      "100% CCTV Monitored Child-Safe Campus",
+      "Experiential STEM & Hands-On Science Discovery",
+      "Safe GPS-Tracked School Transport Across Noida & Mayur Vihar"
+    ],
+    activities: [
+      "Experiential Science & STEM",
+      "Creative Arts, Craft & Pottery",
+      "Public Speaking, Drama & Stage Poise",
+      "Yoga & Physical Agility Drills",
+      "Outdoor Athletics & Team Sports"
+    ],
+    phone: "9873539445",
+    displayPhone: "+91 9873539445",
+    email: "Rakeshpandey2001@gmail.com",
+    badgeColor: "bg-ocean-100 text-ocean-700 border-ocean-300",
+    accentBg: "from-ocean-50 to-blue-50/50",
+    pageUrl: "/",
+  },
+  {
+    id: "aspal-juniors-51",
+    name: "Aspal Juniors (Sector 51)",
+    brand: "Aspal Juniors",
+    tagline: "Pre-School, Daycare & Creche with Dance, Music & Skating",
+    type: "Pre-School, Daycare & Creche",
+    ageGroup: "2 Years – 8 Years",
+    grades: "Toddlers, Playgroup, Nursery, LKG, UKG, Daycare & Creche",
+    sector: "Sector 51, Noida",
+    fullAddress: "Aspal Juniors, Sector 51, Noida, Uttar Pradesh 201301",
+    promotedSectors: [
+      "Sector 51",
+      "Sector 50",
+      "Sector 34",
+      "Sector 41",
+      "Sector 49",
+      "Sector 72",
+      "Sector 71",
+      "Sector 75",
+      "Sector 76",
+      "Sector 77",
+      "Sector 78",
+      "Sector 79"
+    ],
+    features: [
+      "Loving Daycare & Full-Day Creche for Working Parents",
+      "Dedicated Roller Skating Rink with Professional Coaches",
+      "Specialized Dance Academy (Western & Classical)",
+      "Vocal & Instrumental Music Studio",
+      "Multisensory Play & Soft Toddler Gym",
+      "100% CCTV Monitored Child-Safe Environment"
+    ],
+    activities: [
+      "Roller Skating Rink Sessions",
+      "Dance Academy (Western, Folk & Classical)",
+      "Music, Rhythm & Keyboard / Vocal Lessons",
+      "Sensory Water Play & Safe Sandpit",
+      "Storytelling, Puppet Theater & Role Play"
+    ],
+    phone: "9873539445",
+    displayPhone: "+91 9873539445",
+    email: "Rakeshpandey2001@gmail.com",
+    badgeColor: "bg-coral-100 text-coral-700 border-coral-300",
+    accentBg: "from-coral-50 to-rose-50/50",
+    pageUrl: "/aspal-juniors",
+  },
+  {
+    id: "aspal-juniors-22",
+    name: "Aspal Juniors (Sector 22)",
+    brand: "Aspal Juniors",
+    tagline: "Pre-School & Loving Daycare Sanctuary",
+    type: "Pre-School & Daycare",
+    ageGroup: "2 Years – 8 Years",
+    grades: "Toddlers, Playgroup, Nursery, LKG, UKG & Daycare",
+    sector: "Sector 22, Noida",
+    fullAddress: "Aspal Juniors, Sector 22, Noida, Uttar Pradesh 201301",
+    promotedSectors: [
+      "Sector 22",
+      "Sector 55",
+      "Sector 56",
+      "Sector 21",
+      "Sector 12",
+      "Sector 26",
+      "Sector 31",
+      "Sector 34",
+      "Sector 36",
+      "Sector 19",
+      "Rajat Vihar",
+      "Mayur Vihar Phase 3"
+    ],
+    features: [
+      "Warm & Nurturing Pre-School Early Foundations",
+      "Safe, Reliable After-School Daycare Facility",
+      "Phonics Sound Lab & Early Number Exploration",
+      "Child-Friendly Outdoor & Indoor Play Arenas",
+      "Hygienic, Nutritious Meal Times & Nap Quarters",
+      "100% CCTV Surveillance & Background-Verified Staff"
+    ],
+    activities: [
+      "Play-Based Phonics & Story Adventures",
+      "Art & Craft Finger Painting & Sensory Clay",
+      "Gross Motor Play, Tumbling & Balance Drills",
+      "Rhythm, Rhymes & Musical Instruments",
+      "Social Circle Time & Emotional Resilience Games"
+    ],
+    phone: "9873539445",
+    displayPhone: "+91 9873539445",
+    email: "Rakeshpandey2001@gmail.com",
+    badgeColor: "bg-sunshine-100 text-amber-800 border-sunshine-300",
+    accentBg: "from-sunshine-50 to-amber-50/50",
+    pageUrl: "/aspal-juniors",
+  },
+];
+
 export interface ProgramItem {
   id: string;
   title: string;
@@ -293,6 +455,105 @@ export const PROGRAMS_DATA: ProgramItem[] = [
       "Annual Fun & Fitness Sports Carnival with parent-child events",
     ],
     image: "/images/sports-activity.jpg",
+  },
+  {
+    id: "daycare-creche",
+    title: "Loving Daycare & Full-Day Creche",
+    ageGroup: "Ages 2 – 8 Years (Aspal Juniors Sec 51 & Sec 22)",
+    category: "Childcare & Early Wellness",
+    themeColor: "bubblegum",
+    shortDesc: "A safe, home-like daycare sanctuary providing gentle care, nutritious meal assistance, nap quarters, and engaging developmental activities for working parents.",
+    whatTheyLearn: [
+      "Healthy daily routines, self-care and hygiene etiquette",
+      "Social interaction, cooperative play, and empathy",
+      "Language enrichment through storytelling and audiobooks",
+      "Restful afternoon rejuvenation and healthy nutrition habits",
+    ],
+    howTheyLearn: [
+      "Dedicated infant & toddler nap beds in quiet, air-conditioned rooms",
+      "Nutritious snack schedule supervised by trained female caregivers",
+      "Structured evening play, phonics reinforcement and quiet reading",
+      "Live CCTV transparency and continuous caregiver attention",
+    ],
+    keyBenefits: [
+      "100% peace of mind for working parents across Noida & NCR",
+      "Emotional security with warm, motherly childcare attendants",
+      "Smooth blend of afternoon relaxation and productive learning",
+      "Flexible hourly, half-day, and full-day daycare options",
+    ],
+    sampleActivities: [
+      "Post-nap storybook reading and finger puppet performances",
+      "Free drawing and playdough shape creations",
+      "Outdoor sensory grass play and gentle evening swings",
+      "Structured homework support and reading buddy sessions",
+    ],
+    image: "/images/hero-indian-kids.jpg",
+  },
+  {
+    id: "dance-music-skating",
+    title: "Dance, Music & Roller Skating Academy",
+    ageGroup: "Ages 3 – 10 Years (Aspal Juniors Sec 51)",
+    category: "Performing Arts & Agility",
+    themeColor: "sunshine",
+    shortDesc: "Igniting stage confidence, bodily rhythm, balance, and musicality with specialized skating coaches and certified music & dance instructors in Sector 51.",
+    whatTheyLearn: [
+      "Roller skating balance, braking, turning, and speed control",
+      "Western, folk, and classical dance choreography & stage poise",
+      "Vocal pitch, nursery rhythms, and basic musical keyboard notes",
+      "Overcoming performance fear and expressing joyful creativity",
+    ],
+    howTheyLearn: [
+      "Dedicated smooth skating rink with certified safety helmets & pads",
+      "Acoustically sound music room with mini synthesizers and percussion",
+      "Mirrored dance studio with energetic instructors and happy beats",
+      "Frequent campus recitals and festive stage celebrations",
+    ],
+    keyBenefits: [
+      "Superior balance, core strength, and ankle-foot agility",
+      "High self-esteem and stage bravery in public presentations",
+      "Refined auditory rhythm, emotional expression, and focus",
+      "Direct pathway to inter-school sports & cultural competitions",
+    ],
+    sampleActivities: [
+      "Roller skate zigzag obstacle courses and sprint drills",
+      "Choreographed group dance routines for Annual Concerts",
+      "Keyboard note-matching games and vocal singing warm-ups",
+      "Skating badge challenges celebrating personal milestones",
+    ],
+    image: "/images/music-class.jpg",
+  },
+  {
+    id: "upper-primary-grade6",
+    title: "Primary & Upper Primary Education (Till Class VI)",
+    ageGroup: "Ages 6 – 12 Years (Aspal International School Sec 55)",
+    category: "Primary & Middle Prep",
+    themeColor: "ocean",
+    shortDesc: "A rigorous, inquiry-led primary schooling curriculum taking students seamlessly through Grade 6 with strong conceptual mastery across CBSE foundations.",
+    whatTheyLearn: [
+      "Advanced reading comprehension, creative writing & grammar",
+      "Analytical mathematics, fractions, geometry & logical reasoning",
+      "Environmental science, experimental STEM, and digital literacy",
+      "Critical thinking, leadership, project research & presentation",
+    ],
+    howTheyLearn: [
+      "Interactive smart classroom modules and experiential science lab sets",
+      "Collaborative team projects, debates, and public speaking assemblies",
+      "Personalized 1:12 teacher mentoring and continuous diagnostic feedback",
+      "Integration of co-curricular sports, art, and moral value education",
+    ],
+    keyBenefits: [
+      "Flawless readiness for CBSE, ICSE & international middle school boards",
+      "Deep conceptual clarity avoiding reliance on rote tuition",
+      "Responsible digital awareness and inquisitive scientific temperament",
+      "Strong character building, ethical values, and empathetic leadership",
+    ],
+    sampleActivities: [
+      "Science Fair: Building working circuits and water filtration models",
+      "Junior Model United Nations and Class Debate tournaments",
+      "Math Olympiad problem-solving challenge circles",
+      "Environmental green club tree-planting and recycling drives",
+    ],
+    image: "/images/classroom-learning.jpg",
   },
 ];
 

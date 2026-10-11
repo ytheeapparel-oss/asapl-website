@@ -8,6 +8,7 @@ async function dispatchEmailNotification(enquiry: {
   name: string;
   phone: string;
   email?: string | null;
+  campus?: string | null;
   child_name?: string | null;
   child_age?: string | null;
   grade?: string | null;
@@ -16,7 +17,9 @@ async function dispatchEmailNotification(enquiry: {
   message?: string | null;
 }) {
   const isAdmission = enquiry.type === 'admission';
-  const subjectLine = `[ASPAL International] New ${isAdmission ? 'Admission Inquiry' : 'Contact Message'} - ${enquiry.name} (${enquiry.phone})`;
+  const campusDisplay = enquiry.campus || 'Aspal International School (Sector 55)';
+  const campusShort = campusDisplay.split('•')[0].trim();
+  const subjectLine = `[${campusShort}] New ${isAdmission ? 'Admission Inquiry' : 'Contact Message'} - ${enquiry.name} (${enquiry.phone})`;
 
   // 1. Resend API support if configured
   if (process.env.RESEND_API_KEY) {
@@ -32,14 +35,15 @@ async function dispatchEmailNotification(enquiry: {
           to: [NOTIFICATION_EMAIL],
           subject: subjectLine,
           html: `
-            <h2>New Inquiry Received at ASPAL International</h2>
+            <h2>New Inquiry Received - ASPAL Group of Schools</h2>
             <p><strong>Enquiry Type:</strong> ${isAdmission ? 'Admission Application' : 'General Contact'}</p>
+            <p><strong>Preferred Campus:</strong> <span style="color:#d946ef;font-weight:bold;">${campusDisplay}</span></p>
             <p><strong>Parent Name:</strong> ${enquiry.name}</p>
             <p><strong>Phone:</strong> <a href="tel:${enquiry.phone}">${enquiry.phone}</a></p>
             <p><strong>Email:</strong> ${enquiry.email || 'Not provided'}</p>
             ${enquiry.child_name ? `<p><strong>Child Name:</strong> ${enquiry.child_name}</p>` : ''}
             ${enquiry.child_age ? `<p><strong>Child Age:</strong> ${enquiry.child_age}</p>` : ''}
-            ${enquiry.grade ? `<p><strong>Grade:</strong> ${enquiry.grade}</p>` : ''}
+            ${enquiry.grade ? `<p><strong>Grade / Program:</strong> ${enquiry.grade}</p>` : ''}
             ${enquiry.visit_date ? `<p><strong>Visit Date:</strong> ${enquiry.visit_date}</p>` : ''}
             ${enquiry.subject ? `<p><strong>Subject:</strong> ${enquiry.subject}</p>` : ''}
             ${enquiry.message ? `<p><strong>Message:</strong> ${enquiry.message}</p>` : ''}
@@ -67,12 +71,13 @@ async function dispatchEmailNotification(enquiry: {
       body: JSON.stringify({
         _subject: subjectLine,
         'Enquiry Type': isAdmission ? 'Admission Application' : 'General Contact',
+        'Preferred Campus': campusDisplay,
         'Parent Name': enquiry.name,
         'Phone Number': enquiry.phone,
         'Parent Email': enquiry.email || 'Not provided',
         'Child Name': enquiry.child_name || 'N/A',
         'Child Age': enquiry.child_age || 'N/A',
-        'Grade': enquiry.grade || 'N/A',
+        'Grade / Program': enquiry.grade || 'N/A',
         'Preferred Visit Date': enquiry.visit_date || 'N/A',
         'Subject': enquiry.subject || 'N/A',
         'Message': enquiry.message || 'No additional message',
@@ -99,6 +104,7 @@ export async function POST(request: Request) {
       name,
       phone,
       email,
+      campus,
       child_name,
       child_age,
       grade,
@@ -121,6 +127,11 @@ export async function POST(request: Request) {
       );
     }
 
+    const campusSelected = campus?.trim() || null;
+    const formattedMessage = campusSelected 
+      ? `[Campus: ${campusSelected}] ${message?.trim() || ''}`.trim()
+      : (message?.trim() || null);
+
     const trimmedEnquiry = {
       type,
       name: name.trim(),
@@ -130,8 +141,8 @@ export async function POST(request: Request) {
       child_age: child_age?.trim() || null,
       grade: grade?.trim() || null,
       visit_date: visit_date?.trim() || null,
-      subject: subject?.trim() || null,
-      message: message?.trim() || null,
+      subject: subject?.trim() || (campusSelected ? `Inquiry for ${campusSelected}` : null),
+      message: formattedMessage,
       status: 'new',
     };
 
@@ -148,7 +159,10 @@ export async function POST(request: Request) {
     }
 
     // Trigger email notification to Rakeshpandey2001@gmail.com
-    await dispatchEmailNotification(trimmedEnquiry).catch((e) => {
+    await dispatchEmailNotification({
+      ...trimmedEnquiry,
+      campus: campusSelected,
+    }).catch((e) => {
       console.error('Background email dispatch failed:', e);
     });
 

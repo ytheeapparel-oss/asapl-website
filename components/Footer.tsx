@@ -144,6 +144,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/aspal-juniors" className="hover:text-coral-400 transition-colors flex items-center group font-semibold text-coral-300">
+                  <ArrowRight className="w-3.5 h-3.5 mr-1.5 text-coral-400 group-hover:text-coral-300 transition-colors" />
+                  Aspal Juniors (Sec 51 & 22)
+                </Link>
+              </li>
+              <li>
                 <Link href="/about-us" className="hover:text-sunshine-400 transition-colors flex items-center group">
                   <ArrowRight className="w-3.5 h-3.5 mr-1.5 text-slate-500 group-hover:text-sunshine-400 transition-colors" />
                   About Our School
@@ -188,6 +194,16 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/aspal-juniors" className="hover:text-coral-400 transition-colors">
+                  Daycare & Creche (Sec 51 & 22)
+                </Link>
+              </li>
+              <li>
+                <Link href="/aspal-juniors" className="hover:text-sunshine-400 transition-colors">
+                  Dance, Music & Skating (Sec 51)
+                </Link>
+              </li>
+              <li>
                 <Link href="/programs#literacy-language" className="hover:text-ocean-400 transition-colors">
                   Foundational Literacy & Phonics
                 </Link>
@@ -198,74 +214,46 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/programs#creative-arts" className="hover:text-ocean-400 transition-colors">
-                  Creative Arts & Expression
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs#music-movement" className="hover:text-ocean-400 transition-colors">
-                  Music, Rhythm & Drama
-                </Link>
-              </li>
-              <li>
-                <Link href="/programs#physical-sports" className="hover:text-ocean-400 transition-colors">
-                  Physical Agility & Sports
+                <Link href="/programs#upper-primary-grade6" className="hover:text-ocean-400 transition-colors">
+                  Primary Education (Till Class 6)
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Contact & Campus Info */}
+          {/* Column 4: Our 3 Noida Campuses */}
           <div className="space-y-4">
             <h3 className="font-heading text-base font-bold text-white tracking-wide uppercase">
-              Campus Visit
+              Our 3 Noida Campuses
             </h3>
-            <div className="space-y-3 text-sm">
-              <div className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 text-coral-400 flex-shrink-0 mt-1" />
-                <span className="text-slate-300">
-                  {SCHOOL_DATA.address.fullAddress}
-                </span>
+            <div className="space-y-3.5 text-xs">
+              <div className="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/60 space-y-1">
+                <p className="font-bold text-ocean-400 text-sm">1. Aspal International School</p>
+                <p className="text-slate-300">Sector 55, Noida • Primary till Class VI</p>
+                <p className="text-[11px] text-slate-400">Coverage: Sec 55, 56, 21, 22, 12, 26, 31, 34, 36, 19, MV Phase 3</p>
               </div>
 
-              <div className="flex items-center space-x-3">
+              <div className="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/60 space-y-1">
+                <p className="font-bold text-coral-400 text-sm">2. Aspal Juniors (Sec 51)</p>
+                <p className="text-slate-300">Sector 51, Noida • Pre-School, Daycare, Skating, Dance & Music</p>
+                <p className="text-[11px] text-slate-400">Coverage: Sec 51, 50, 34, 41, 49, 71, 72, 75, 76, 77, 78, 79</p>
+              </div>
+
+              <div className="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/60 space-y-1">
+                <p className="font-bold text-amber-400 text-sm">3. Aspal Juniors (Sec 22)</p>
+                <p className="text-slate-300">Sector 22, Noida • Pre-School & Daycare Sanctuary</p>
+                <p className="text-[11px] text-slate-400">Coverage: Sec 22, 55, 56, 21, 12, 26, 31, 34, 36, Rajat Vihar</p>
+              </div>
+
+              <div className="pt-1 flex items-center space-x-3 text-sm">
                 <Phone className="w-4 h-4 text-sunshine-400 flex-shrink-0" />
                 <a 
                   href={`tel:${SCHOOL_DATA.phone}`} 
-                  className="text-slate-300 hover:text-white font-semibold transition-colors"
+                  className="text-slate-200 hover:text-white font-bold transition-colors"
                 >
                   {SCHOOL_DATA.displayPhone}
                 </a>
               </div>
-
-              <div className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-ocean-400 flex-shrink-0" />
-                <a 
-                  href={`mailto:${SCHOOL_DATA.email}`} 
-                  className="text-slate-300 hover:text-white transition-colors truncate"
-                >
-                  {SCHOOL_DATA.email}
-                </a>
-              </div>
-
-              <div className="flex items-start space-x-3 text-xs text-slate-400 pt-1">
-                <Clock className="w-4 h-4 text-mint-400 flex-shrink-0 mt-0.5" />
-                <span>
-                  Office Hours: Monday – Saturday<br />
-                  <span className="text-slate-400">[ADD SCHOOL TIMINGS e.g. 8:00 AM – 3:30 PM]</span>
-                </span>
-              </div>
-            </div>
-
-            <div className="pt-2">
-              <a
-                href="https://maps.google.com/?q=Sector+55+Noida+Uttar+Pradesh"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-xs font-bold text-ocean-400 hover:text-ocean-300 underline"
-              >
-                Open in Google Maps →
-              </a>
             </div>
           </div>
 

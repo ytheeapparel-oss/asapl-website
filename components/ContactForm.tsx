@@ -9,6 +9,7 @@ export default function ContactForm() {
     name: "",
     phone: "",
     email: "",
+    campus: "Aspal International School (Sector 55, Noida)",
     subject: "Campus Visit & Admission",
     message: "",
     honeypot: "",
@@ -18,6 +19,12 @@ export default function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+
+  const campusOptions = [
+    "Aspal International School (Sector 55, Noida • Primary till Class 6)",
+    "Aspal Juniors (Sector 51, Noida • Pre-School, Daycare, Skating, Dance & Music)",
+    "Aspal Juniors (Sector 22, Noida • Pre-School & Daycare)",
+  ];
 
   const validate = () => {
     const err: Record<string, string> = {};
@@ -48,6 +55,7 @@ export default function ContactForm() {
           name: formData.name,
           phone: formData.phone,
           email: formData.email,
+          campus: formData.campus,
           subject: formData.subject,
           message: formData.message,
           honeypot: formData.honeypot,
@@ -96,6 +104,7 @@ export default function ContactForm() {
                 name: "",
                 phone: "",
                 email: "",
+                campus: "Aspal International School (Sector 55, Noida)",
                 subject: "Campus Visit & Admission",
                 message: "",
                 honeypot: "",
@@ -184,6 +193,24 @@ export default function ContactForm() {
                 className="w-full px-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-ocean-500 focus:ring-2 focus:ring-ocean-100"
               />
             </div>
+          </div>
+
+          <div>
+            <label htmlFor="c-campus" className="block text-xs font-bold text-slate-700 mb-1">
+              Select Campus / School Location <span className="text-coral-500">*</span>
+            </label>
+            <select
+              id="c-campus"
+              value={formData.campus}
+              onChange={(e) => setFormData({ ...formData, campus: e.target.value })}
+              className="w-full px-3 py-2.5 rounded-xl border border-slate-200 text-sm font-semibold text-slate-800 focus:outline-none focus:border-ocean-500 focus:ring-2 focus:ring-ocean-100 bg-white"
+            >
+              {campusOptions.map((opt) => (
+                <option key={opt} value={opt}>
+                  {opt}
+                </option>
+              ))}
+            </select>
           </div>
 
           <div>

@@ -39,6 +39,7 @@ import AdmissionForm from "@/components/AdmissionForm";
 import CampusFacilities from "@/components/CampusFacilities";
 import AgeCalculator from "@/components/AgeCalculator";
 import SchoolVideoTour from "@/components/SchoolVideoTour";
+import CampusDirectory from "@/components/CampusDirectory";
 import { 
   SCHOOL_DATA, 
   PROGRAMS_DATA, 
@@ -189,7 +190,7 @@ export default function HomePage() {
             {/* Hyper-Local Proximity Indicator */}
             <div className="pt-2">
               <p className="text-xs text-slate-500 font-medium">
-                📍 Recognized as a premier kids school, play school & primary school in Sector 55, Noida • Welcoming families from <span className="font-bold text-slate-700">Sector 56, Sector 62, Sector 12, Sector 22 & Central Noida</span>.
+                📍 <strong>ASPAL Group of Schools:</strong> Aspal International School (Sector 55 • Till Class VI) & Aspal Juniors (Sector 51 & Sector 22 • Pre-School, Daycare, Skating, Dance & Music) • Welcoming families across <span className="font-bold text-slate-700">Sector 55, 56, 21, 22, 12, 26, 31, 34, 36, 19, 51, 50, 41, 49, 71–79, Rajat Vihar & Mayur Vihar Phase 3</span>.
               </p>
             </div>
 
@@ -197,6 +198,9 @@ export default function HomePage() {
 
         </div>
       </section>
+
+      {/* 2.5 INTERACTIVE CAMPUS DIRECTORY: ASPAL INTERNATIONAL & ASPAL JUNIORS */}
+      <CampusDirectory />
 
       {/* 3. DEDICATED ANIMATED SCHOOL VIDEO TOUR SECTION */}
       <div id="school-video-tour">
@@ -602,9 +606,12 @@ export default function HomePage() {
                   </p>
                   <div className="flex flex-wrap gap-2 pt-1">
                     {[
-                      "Sector 55", "Sector 56", "Sector 62", "Sector 51", 
-                      "Sector 50", "Sector 34", "Sector 12", "Sector 22", 
-                      "Sector 61", "Sector 70", "Sector 71", "Noida Extension"
+                      "Sector 55", "Sector 56", "Sector 51", "Sector 50", 
+                      "Sector 22", "Sector 12", "Sector 21", "Sector 26", 
+                      "Sector 31", "Sector 34", "Sector 36", "Sector 19", 
+                      "Sector 41", "Sector 49", "Sector 71", "Sector 72", 
+                      "Sector 75", "Sector 76", "Sector 77", "Sector 78", 
+                      "Sector 79", "Rajat Vihar", "Mayur Vihar Phase 3"
                     ].map((sec, idx) => (
                       <span key={idx} className="px-3 py-1.5 rounded-full text-xs font-bold bg-white text-slate-700 border border-slate-200 shadow-xs">
                         {sec}
